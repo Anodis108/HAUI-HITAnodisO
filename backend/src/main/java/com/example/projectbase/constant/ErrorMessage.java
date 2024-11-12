@@ -110,4 +110,14 @@ public class ErrorMessage {
     public static final String ERR_NOT_FOUND_ID = "exception.profile.not.found.id";
   }
 
+  /**
+   * The type Pdf.
+   */
+  public static class PDF{
+    /**
+     * The constant ERR_NOT_FOUND_ID.
+     */
+    public static final String ERR_NOT_FOUND_ID = "exception.profile.not.found.id";
+  }
+
 }

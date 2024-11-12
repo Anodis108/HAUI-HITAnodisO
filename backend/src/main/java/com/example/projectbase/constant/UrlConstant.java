@@ -103,4 +103,24 @@ public class UrlConstant {
     private Profile() {}
   }
 
+  /**
+   * The type Pdf.
+   */
+  public static class PDF {
+    private static final String PRE_FIX = "/pdf";
+    /**
+     * The constant UPLOAD_PDF.
+     */
+    public static final String UPLOAD_PDF = PRE_FIX;
+    /**
+     * The constant GET_PDF_BY_PROFILE_ID.
+     */
+    public static final String GET_PDF_BY_PROFILE_ID = PRE_FIX + "/profile";
+    /**
+     * The constant DELETE_PDF.
+     */
+    public static final String DELETE_PDF = PRE_FIX;
+    private PDF() {}
+  }
+
 }

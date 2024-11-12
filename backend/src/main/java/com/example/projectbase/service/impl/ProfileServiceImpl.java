@@ -11,6 +11,7 @@ import com.example.projectbase.domain.entity.Profile;
 import com.example.projectbase.domain.entity.User;
 import com.example.projectbase.domain.mapper.ProfileMapper;
 import com.example.projectbase.exception.NotFoundException;
+import com.example.projectbase.exception.UserAlreadyHasThisProfile;
 import com.example.projectbase.repository.ProfileRepository;
 import com.example.projectbase.repository.UserRepository;
 import com.example.projectbase.service.ProfileService;
@@ -33,6 +34,10 @@ public class ProfileServiceImpl implements ProfileService {
     @Override
     public ProfileResponseDto createProfile(ProfileCreateDto profileCreateDto) {
         User user =  userRepository.findById(profileCreateDto.getUserId()).orElseThrow(() -> new NotFoundException(ErrorMessage.User.ERR_NOT_FOUND_ID));
+        boolean profileExists = profileRepository.findProfilesByNameAndUserId(profileCreateDto.getName(), user.getId()).isPresent();
+        if(profileExists) {
+            throw new UserAlreadyHasThisProfile("You already have this profile: "+profileCreateDto.getName());
+        }
         Profile profile = profileMapper.toProfile(profileCreateDto);
         profile.setUser(user);
         profile.setStatus(ProfileConstant.PENDING);
