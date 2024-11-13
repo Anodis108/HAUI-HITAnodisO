@@ -14,24 +14,24 @@ import java.nio.charset.StandardCharsets;
 @Configuration
 public class ThymeleafTemplateConfig {
 
-  /**
-   * Spring template engine spring template engine.
-   *
-   * @return the spring template engine
-   */
-  @Bean
+    /**
+     * Spring template engine spring template engine.
+     *
+     * @return the spring template engine
+     */
+    @Bean
   public SpringTemplateEngine springTemplateEngine() {
     SpringTemplateEngine springTemplateEngine = new SpringTemplateEngine();
     springTemplateEngine.addTemplateResolver(emailTemplateResolver());
     return springTemplateEngine;
   }
 
-  /**
-   * Email template resolver class loader template resolver.
-   *
-   * @return the class loader template resolver
-   */
-  public ClassLoaderTemplateResolver emailTemplateResolver() {
+    /**
+     * Email template resolver class loader template resolver.
+     *
+     * @return the class loader template resolver
+     */
+    public ClassLoaderTemplateResolver emailTemplateResolver() {
     ClassLoaderTemplateResolver emailTemplateResolver = new ClassLoaderTemplateResolver();
     emailTemplateResolver.setPrefix("/templates/");
     emailTemplateResolver.setSuffix(".html");

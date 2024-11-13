@@ -13,31 +13,31 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface UserMapper {
 
-  /**
-   * To user user.
-   *
-   * @param userCreateDTO the user create dto
-   * @return the user
-   */
-  User toUser(UserCreateDto userCreateDTO);
+    /**
+     * To user user.
+     *
+     * @param userCreateDTO the user create dto
+     * @return the user
+     */
+    User toUser(UserCreateDto userCreateDTO);
 
-  /**
-   * To user dto user dto.
-   *
-   * @param user the user
-   * @return the user dto
-   */
-  @Mappings({
+    /**
+     * To user dto user dto.
+     *
+     * @param user the user
+     * @return the user dto
+     */
+    @Mappings({
       @Mapping(target = "roleName", source = "user.role.name"),
   })
   UserDto toUserDto(User user);
 
-  /**
-   * To user dtos list.
-   *
-   * @param user the user
-   * @return the list
-   */
-  List<UserDto> toUserDtos(List<User> user);
+    /**
+     * To user dtos list.
+     *
+     * @param user the user
+     * @return the list
+     */
+    List<UserDto> toUserDtos(List<User> user);
 
 }

@@ -26,15 +26,15 @@ public class LoginResponseDto {
 
   private Collection<? extends GrantedAuthority> authorities;
 
-  /**
-   * Instantiates a new Login response dto.
-   *
-   * @param accessToken  the access token
-   * @param refreshToken the refresh token
-   * @param id           the id
-   * @param authorities  the authorities
-   */
-  public LoginResponseDto(String accessToken, String refreshToken, String id, Collection<? extends GrantedAuthority> authorities) {
+    /**
+     * Instantiates a new Login response dto.
+     *
+     * @param accessToken  the access token
+     * @param refreshToken the refresh token
+     * @param id           the id
+     * @param authorities  the authorities
+     */
+    public LoginResponseDto(String accessToken, String refreshToken, String id, Collection<? extends GrantedAuthority> authorities) {
     this.accessToken = accessToken;
     this.refreshToken = refreshToken;
     this.id = id;

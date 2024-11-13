@@ -23,12 +23,12 @@ public class CloudinaryConfig {
   @Value("${cloudinary.api_secret}")
   private String apiSecret;
 
-  /**
-   * Cloud config cloudinary.
-   *
-   * @return the cloudinary
-   */
-  @Bean
+    /**
+     * Cloud config cloudinary.
+     *
+     * @return the cloudinary
+     */
+    @Bean
   public Cloudinary cloudConfig() {
     Map<String, String> config = new HashMap<>();
     config.put("cloud_name", cloudName);

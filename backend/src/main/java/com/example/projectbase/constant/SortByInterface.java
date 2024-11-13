@@ -6,12 +6,12 @@ package com.example.projectbase.constant;
 @FunctionalInterface
 public interface SortByInterface {
 
-  /**
-   * Gets sort by.
-   *
-   * @param sortBy the sort by
-   * @return the sort by
-   */
-  String getSortBy(String sortBy);
+    /**
+     * Gets sort by.
+     *
+     * @param sortBy the sort by
+     * @return the sort by
+     */
+    String getSortBy(String sortBy);
 
 }

@@ -12,12 +12,12 @@ import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 @Configuration
 public class MessageSourceConfig {
 
-  /**
-   * Message source message source.
-   *
-   * @return the message source
-   */
-  @Bean
+    /**
+     * Message source message source.
+     *
+     * @return the message source
+     */
+    @Bean
   public MessageSource messageSource() {
     ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
     messageSource.setBasename("classpath:i18n/messages");
@@ -25,12 +25,12 @@ public class MessageSourceConfig {
     return messageSource;
   }
 
-  /**
-   * Gets validator.
-   *
-   * @return the validator
-   */
-  @Bean
+    /**
+     * Gets validator.
+     *
+     * @return the validator
+     */
+    @Bean
   public LocalValidatorFactoryBean getValidator() {
     LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
     bean.setValidationMessageSource(messageSource());

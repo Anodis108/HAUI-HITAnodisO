@@ -25,23 +25,23 @@ public class RestData<T> {
   @JsonInclude(JsonInclude.Include.NON_NULL)
   private T data;
 
-  /**
-   * Instantiates a new Rest data.
-   *
-   * @param data the data
-   */
-  public RestData(T data) {
+    /**
+     * Instantiates a new Rest data.
+     *
+     * @param data the data
+     */
+    public RestData(T data) {
     this.status = RestStatus.SUCCESS;
     this.data = data;
   }
 
-  /**
-   * Error rest data.
-   *
-   * @param message the message
-   * @return the rest data
-   */
-  public static RestData<?> error(Object message) {
+    /**
+     * Error rest data.
+     *
+     * @param message the message
+     * @return the rest data
+     */
+    public static RestData<?> error(Object message) {
     return new RestData<>(RestStatus.ERROR, message, null);
   }
 

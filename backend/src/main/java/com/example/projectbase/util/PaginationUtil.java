@@ -15,24 +15,24 @@ import org.springframework.data.domain.Sort;
  */
 public class PaginationUtil {
 
-  /**
-   * Build pageable pageable.
-   *
-   * @param request the request
-   * @return the pageable
-   */
-  public static Pageable buildPageable(PaginationRequestDto request) {
+    /**
+     * Build pageable pageable.
+     *
+     * @param request the request
+     * @return the pageable
+     */
+    public static Pageable buildPageable(PaginationRequestDto request) {
     return PageRequest.of(request.getPageNum(), request.getPageSize());
   }
 
-  /**
-   * Build pageable pageable.
-   *
-   * @param request  the request
-   * @param constant the constant
-   * @return the pageable
-   */
-  public static Pageable buildPageable(PaginationSortRequestDto request, SortByDataConstant constant) {
+    /**
+     * Build pageable pageable.
+     *
+     * @param request  the request
+     * @param constant the constant
+     * @return the pageable
+     */
+    public static Pageable buildPageable(PaginationSortRequestDto request, SortByDataConstant constant) {
     Sort sort;
     if(request.getIsAscending()){
       sort = Sort.by(request.getSortBy(constant)).ascending();
@@ -42,15 +42,15 @@ public class PaginationUtil {
     return PageRequest.of(request.getPageNum(), request.getPageSize(), sort);
   }
 
-  /**
-   * Build paging meta paging meta.
-   *
-   * @param <T>     the type parameter
-   * @param request the request
-   * @param pages   the pages
-   * @return the paging meta
-   */
-  public static <T> PagingMeta buildPagingMeta(PaginationRequestDto request, Page<T> pages) {
+    /**
+     * Build paging meta paging meta.
+     *
+     * @param <T>     the type parameter
+     * @param request the request
+     * @param pages   the pages
+     * @return the paging meta
+     */
+    public static <T> PagingMeta buildPagingMeta(PaginationRequestDto request, Page<T> pages) {
     return new PagingMeta(
         pages.getTotalElements(),
         pages.getTotalPages(),
@@ -61,16 +61,16 @@ public class PaginationUtil {
     );
   }
 
-  /**
-   * Build paging meta paging meta.
-   *
-   * @param <T>      the type parameter
-   * @param request  the request
-   * @param constant the constant
-   * @param pages    the pages
-   * @return the paging meta
-   */
-  public static <T> PagingMeta buildPagingMeta(PaginationSortRequestDto request, SortByDataConstant constant, Page<T> pages) {
+    /**
+     * Build paging meta paging meta.
+     *
+     * @param <T>      the type parameter
+     * @param request  the request
+     * @param constant the constant
+     * @param pages    the pages
+     * @return the paging meta
+     */
+    public static <T> PagingMeta buildPagingMeta(PaginationSortRequestDto request, SortByDataConstant constant, Page<T> pages) {
     return new PagingMeta(
         pages.getTotalElements(),
         pages.getTotalPages(),

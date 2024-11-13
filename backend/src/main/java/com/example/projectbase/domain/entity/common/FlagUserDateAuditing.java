@@ -8,6 +8,9 @@ import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 
+/**
+ * The type Flag user date auditing.
+ */
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 @Setter

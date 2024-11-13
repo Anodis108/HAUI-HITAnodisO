@@ -22,22 +22,22 @@ public interface UserRepository extends JpaRepository<User, String> {
   @Query("SELECT u FROM User u WHERE u.id = ?1")
   Optional<User> findById(String id);
 
-  /**
-   * Find by username optional.
-   *
-   * @param username the username
-   * @return the optional
-   */
-  @Query("SELECT u FROM User u WHERE u.username = ?1")
+    /**
+     * Find by username optional.
+     *
+     * @param username the username
+     * @return the optional
+     */
+    @Query("SELECT u FROM User u WHERE u.username = ?1")
   Optional<User> findByUsername(String username);
 
-  /**
-   * Gets user.
-   *
-   * @param currentUser the current user
-   * @return the user
-   */
-  default User getUser(UserPrincipal currentUser) {
+    /**
+     * Gets user.
+     *
+     * @param currentUser the current user
+     * @return the user
+     */
+    default User getUser(UserPrincipal currentUser) {
     return findByUsername(currentUser.getUsername())
         .orElseThrow(() -> new NotFoundException(ErrorMessage.User.ERR_NOT_FOUND_USERNAME,
             new String[]{currentUser.getUsername()}));

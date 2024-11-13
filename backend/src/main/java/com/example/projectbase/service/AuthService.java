@@ -15,30 +15,30 @@ import javax.servlet.http.HttpServletResponse;
  */
 public interface AuthService {
 
-  /**
-   * Login login response dto.
-   *
-   * @param request the request
-   * @return the login response dto
-   */
-  LoginResponseDto login(LoginRequestDto request);
+    /**
+     * Login login response dto.
+     *
+     * @param request the request
+     * @return the login response dto
+     */
+    LoginResponseDto login(LoginRequestDto request);
 
-  /**
-   * Refresh token refresh response dto.
-   *
-   * @param request the request
-   * @return the token refresh response dto
-   */
-  TokenRefreshResponseDto refresh(TokenRefreshRequestDto request);
+    /**
+     * Refresh token refresh response dto.
+     *
+     * @param request the request
+     * @return the token refresh response dto
+     */
+    TokenRefreshResponseDto refresh(TokenRefreshRequestDto request);
 
-  /**
-   * Logout common response dto.
-   *
-   * @param request        the request
-   * @param response       the response
-   * @param authentication the authentication
-   * @return the common response dto
-   */
-  CommonResponseDto logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication);
+    /**
+     * Logout common response dto.
+     *
+     * @param request        the request
+     * @param response       the response
+     * @param authentication the authentication
+     * @return the common response dto
+     */
+    CommonResponseDto logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication);
 
 }

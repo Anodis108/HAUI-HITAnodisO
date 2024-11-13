@@ -26,27 +26,27 @@ public class AuthController {
 
   private final AuthService authService;
 
-  /**
-   * Login response entity.
-   *
-   * @param request the request
-   * @return the response entity
-   */
-  @Operation(summary = "API Login")
+    /**
+     * Login response entity.
+     *
+     * @param request the request
+     * @return the response entity
+     */
+    @Operation(summary = "API Login")
   @PostMapping(UrlConstant.Auth.LOGIN)
   public ResponseEntity<?> login(@Valid @RequestBody LoginRequestDto request) {
     return VsResponseUtil.success(authService.login(request));
   }
 
-  /**
-   * Logout response entity.
-   *
-   * @param request        the request
-   * @param response       the response
-   * @param authentication the authentication
-   * @return the response entity
-   */
-  @Operation(summary = "API Logout")
+    /**
+     * Logout response entity.
+     *
+     * @param request        the request
+     * @param response       the response
+     * @param authentication the authentication
+     * @return the response entity
+     */
+    @Operation(summary = "API Logout")
   @PostMapping(UrlConstant.Auth.LOGOUT)
   public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
     return VsResponseUtil.success(authService.logout(request, response, authentication));

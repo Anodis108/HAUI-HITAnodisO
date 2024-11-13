@@ -14,60 +14,60 @@ import com.example.projectbase.security.UserPrincipal;
  */
 public interface UserService {
 
-  /**
-   * Create user user dto.
-   *
-   * @param userCreateDto the user create dto
-   * @return the user dto
-   */
-  UserDto createUser(UserCreateDto userCreateDto);
+    /**
+     * Create user user dto.
+     *
+     * @param userCreateDto the user create dto
+     * @return the user dto
+     */
+    UserDto createUser(UserCreateDto userCreateDto);
 
-  /**
-   * Gets user by id.
-   *
-   * @param userId the user id
-   * @return the user by id
-   */
-  UserDto getUserById(String userId);
+    /**
+     * Gets user by id.
+     *
+     * @param userId the user id
+     * @return the user by id
+     */
+    UserDto getUserById(String userId);
 
-  /**
-   * Gets users.
-   *
-   * @param request the request
-   * @return the users
-   */
-  PaginationResponseDto<UserDto> getUsers(PaginationFullRequestDto request);
+    /**
+     * Gets users.
+     *
+     * @param request the request
+     * @return the users
+     */
+    PaginationResponseDto<UserDto> getUsers(PaginationFullRequestDto request);
 
-  /**
-   * Gets current user.
-   *
-   * @param principal the principal
-   * @return the current user
-   */
-  UserDto getCurrentUser(UserPrincipal principal);
+    /**
+     * Gets current user.
+     *
+     * @param principal the principal
+     * @return the current user
+     */
+    UserDto getCurrentUser(UserPrincipal principal);
 
-  /**
-   * Change password common response dto.
-   *
-   * @param changePasswordDto the change password dto
-   * @return the common response dto
-   */
-  CommonResponseDto changePassword(ChangePasswordDto changePasswordDto);
+    /**
+     * Change password common response dto.
+     *
+     * @param changePasswordDto the change password dto
+     * @return the common response dto
+     */
+    CommonResponseDto changePassword(ChangePasswordDto changePasswordDto);
 
-  /**
-   * Update user user dto.
-   *
-   * @param userUpdateDto the user update dto
-   * @return the user dto
-   */
-  UserDto updateUser(UserUpdateDto userUpdateDto);
+    /**
+     * Update user user dto.
+     *
+     * @param userUpdateDto the user update dto
+     * @return the user dto
+     */
+    UserDto updateUser(UserUpdateDto userUpdateDto);
 
-  /**
-   * Delete user common response dto.
-   *
-   * @param userId the user id
-   * @return the common response dto
-   */
-  CommonResponseDto deleteUser(String userId);
+    /**
+     * Delete user common response dto.
+     *
+     * @param userId the user id
+     * @return the common response dto
+     */
+    CommonResponseDto deleteUser(String userId);
 
 }

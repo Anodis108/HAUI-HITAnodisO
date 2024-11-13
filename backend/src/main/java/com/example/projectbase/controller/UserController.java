@@ -31,13 +31,13 @@ public class UserController {
 
   private final UserService userService;
 
-  /**
-   * Create user response entity.
-   *
-   * @param userCreateDto the user create dto
-   * @return the response entity
-   */
-  @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
+    /**
+     * Create user response entity.
+     *
+     * @param userCreateDto the user create dto
+     * @return the response entity
+     */
+    @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
   @Operation(summary = "API create user")
   @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
   @PostMapping(UrlConstant.User.CREATE_USER)
@@ -45,13 +45,13 @@ public class UserController {
     return VsResponseUtil.success(userService.createUser(userCreateDto));
   }
 
-  /**
-   * Change password response entity.
-   *
-   * @param changePasswordDto the change password dto
-   * @return the response entity
-   */
-  @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
+    /**
+     * Change password response entity.
+     *
+     * @param changePasswordDto the change password dto
+     * @return the response entity
+     */
+    @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
   @Operation(summary = "API change password")
   @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
   @PatchMapping(UrlConstant.User.CHANGE_PASSWORD)
@@ -59,13 +59,13 @@ public class UserController {
     return VsResponseUtil.success(userService.changePassword(changePasswordDto));
   }
 
-  /**
-   * Update user response entity.
-   *
-   * @param userUpdateDto the user update dto
-   * @return the response entity
-   */
-  @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
+    /**
+     * Update user response entity.
+     *
+     * @param userUpdateDto the user update dto
+     * @return the response entity
+     */
+    @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
   @Operation(summary = "API update user")
   @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
   @PatchMapping(UrlConstant.User.UPDATE_USER)
@@ -73,13 +73,13 @@ public class UserController {
     return VsResponseUtil.success(userService.updateUser(userUpdateDto));
   }
 
-  /**
-   * Gets user by id.
-   *
-   * @param userId the user id
-   * @return the user by id
-   */
-  @Tag(name = "user-controller-admin")
+    /**
+     * Gets user by id.
+     *
+     * @param userId the user id
+     * @return the user by id
+     */
+    @Tag(name = "user-controller-admin")
   @Operation(summary = "API get user")
   @PreAuthorize("hasRole('ADMIN')")
   @GetMapping(UrlConstant.User.GET_USER)
@@ -87,13 +87,13 @@ public class UserController {
     return VsResponseUtil.success(userService.getUserById(userId));
   }
 
-  /**
-   * Gets current user.
-   *
-   * @param principal the principal
-   * @return the current user
-   */
-  @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
+    /**
+     * Gets current user.
+     *
+     * @param principal the principal
+     * @return the current user
+     */
+    @Tags({@Tag(name = "user-controller-admin"), @Tag(name = "user-controller")})
   @Operation(summary = "API get current user login")
   @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
   @GetMapping(UrlConstant.User.GET_CURRENT_USER)
@@ -102,13 +102,13 @@ public class UserController {
     return VsResponseUtil.success(userService.getCurrentUser(principal));
   }
 
-  /**
-   * Gets customers.
-   *
-   * @param requestDTO the request dto
-   * @return the customers
-   */
-  @Tag(name = "user-controller-admin")
+    /**
+     * Gets customers.
+     *
+     * @param requestDTO the request dto
+     * @return the customers
+     */
+    @Tag(name = "user-controller-admin")
   @Operation(summary = "API get all user")
   @PreAuthorize("hasRole('ADMIN')")
   @GetMapping(UrlConstant.User.GET_USERS)
@@ -116,13 +116,13 @@ public class UserController {
     return VsResponseUtil.success(userService.getUsers(requestDTO));
   }
 
-  /**
-   * Delete user by id response entity.
-   *
-   * @param userId the user id
-   * @return the response entity
-   */
-  @Tag(name = "user-controller-admin")
+    /**
+     * Delete user by id response entity.
+     *
+     * @param userId the user id
+     * @return the response entity
+     */
+    @Tag(name = "user-controller-admin")
   @Operation(summary = "API delete user")
   @PreAuthorize("hasRole('ADMIN')")
   @DeleteMapping(UrlConstant.User.DELETE_USER)

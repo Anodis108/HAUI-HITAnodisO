@@ -27,28 +27,28 @@ public class UserPrincipal implements UserDetails {
 
   private final Collection<? extends GrantedAuthority> authorities;
 
-  /**
-   * Instantiates a new User principal.
-   *
-   * @param username    the username
-   * @param password    the password
-   * @param authorities the authorities
-   */
-  public UserPrincipal(String username, String password, Collection<? extends GrantedAuthority> authorities) {
+    /**
+     * Instantiates a new User principal.
+     *
+     * @param username    the username
+     * @param password    the password
+     * @param authorities the authorities
+     */
+    public UserPrincipal(String username, String password, Collection<? extends GrantedAuthority> authorities) {
     this(null, null, null, username, password, authorities);
   }
 
-  /**
-   * Instantiates a new User principal.
-   *
-   * @param id          the id
-   * @param firstName   the first name
-   * @param lastName    the last name
-   * @param username    the username
-   * @param password    the password
-   * @param authorities the authorities
-   */
-  public UserPrincipal(String id, String firstName, String lastName, String username, String password,
+    /**
+     * Instantiates a new User principal.
+     *
+     * @param id          the id
+     * @param firstName   the first name
+     * @param lastName    the last name
+     * @param username    the username
+     * @param password    the password
+     * @param authorities the authorities
+     */
+    public UserPrincipal(String id, String firstName, String lastName, String username, String password,
                        Collection<? extends GrantedAuthority> authorities) {
     this.id = id;
     this.firstName = firstName;
@@ -63,43 +63,43 @@ public class UserPrincipal implements UserDetails {
     }
   }
 
-  /**
-   * Create user principal.
-   *
-   * @param user the user
-   * @return the user principal
-   */
-  public static UserPrincipal create(User user) {
+    /**
+     * Create user principal.
+     *
+     * @param user the user
+     * @return the user principal
+     */
+    public static UserPrincipal create(User user) {
     List<GrantedAuthority> authorities = new LinkedList<>();
     authorities.add(new SimpleGrantedAuthority(user.getRole().getName()));
     return new UserPrincipal(user.getId(), user.getFirstName(), user.getLastName(),
         user.getUsername(), user.getPassword(), authorities);
   }
 
-  /**
-   * Gets id.
-   *
-   * @return the id
-   */
-  public String getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public String getId() {
     return id;
   }
 
-  /**
-   * Gets first name.
-   *
-   * @return the first name
-   */
-  public String getFirstName() {
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
+    public String getFirstName() {
     return firstName;
   }
 
-  /**
-   * Gets last name.
-   *
-   * @return the last name
-   */
-  public String getLastName() {
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
+    public String getLastName() {
     return lastName;
   }
 

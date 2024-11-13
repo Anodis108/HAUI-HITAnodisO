@@ -5,10 +5,10 @@ package com.example.projectbase.constant;
  */
 public enum SortByDataConstant implements SortByInterface {
 
-  /**
-   * The User.
-   */
-  USER {
+    /**
+     * The User.
+     */
+    USER {
     @Override
     public String getSortBy(String sortBy) {
       switch (sortBy) {

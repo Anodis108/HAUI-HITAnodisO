@@ -28,7 +28,7 @@ public interface ProfileMapper {
      * @return the profile response dto
      */
     @Mappings({
-            @Mapping(target = "createdBy", source = "profile.user.firstName"),
+            @Mapping(target = "createdBy", source = "profile.user.username"),
     })
     ProfileResponseDto toProfileResponseDto(Profile profile);
 }

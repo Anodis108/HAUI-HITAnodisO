@@ -19,13 +19,13 @@ public class TokenRefreshResponseDto {
 
   private String refreshToken;
 
-  /**
-   * Instantiates a new Token refresh response dto.
-   *
-   * @param accessToken  the access token
-   * @param refreshToken the refresh token
-   */
-  public TokenRefreshResponseDto(String accessToken, String refreshToken) {
+    /**
+     * Instantiates a new Token refresh response dto.
+     *
+     * @param accessToken  the access token
+     * @param refreshToken the refresh token
+     */
+    public TokenRefreshResponseDto(String accessToken, String refreshToken) {
     this.accessToken = accessToken;
     this.refreshToken = refreshToken;
   }

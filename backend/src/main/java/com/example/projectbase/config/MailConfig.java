@@ -14,24 +14,24 @@ import java.util.Properties;
 @Configuration
 public class MailConfig {
 
-  /**
-   * The Username.
-   */
-  @Value("${mail.username}")
+    /**
+     * The Username.
+     */
+    @Value("${mail.username}")
   public String username;
 
-  /**
-   * The Password.
-   */
-  @Value("${mail.password}")
+    /**
+     * The Password.
+     */
+    @Value("${mail.password}")
   public String password;
 
-  /**
-   * Gets java mail sender.
-   *
-   * @return the java mail sender
-   */
-  @Bean
+    /**
+     * Gets java mail sender.
+     *
+     * @return the java mail sender
+     */
+    @Bean
   public JavaMailSender getJavaMailSender() {
     JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
     mailSender.setHost("smtp.gmail.com");

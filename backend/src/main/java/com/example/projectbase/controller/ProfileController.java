@@ -77,6 +77,7 @@ public class ProfileController {
         return VsResponseUtil.success(profileService.updateProfile(profileUpdateDto));
     }
 
+
     /**
      * Accept profile response entity.
      *
@@ -84,7 +85,7 @@ public class ProfileController {
      * @return the response entity
      */
     @Tag(name = "profile-controller-admin")
-    @Operation(summary = "API accept profile")
+    @Operation(summary = "API accept profile and stamp all PDFs in profile")
     @PreAuthorize("hasAnyRole('ADMIN')")
     @PatchMapping(UrlConstant.Profile.ACCEPT_PROFILE)
     public ResponseEntity<?> acceptProfile(@RequestParam String profileId) {

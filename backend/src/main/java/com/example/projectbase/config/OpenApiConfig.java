@@ -16,12 +16,12 @@ public class OpenApiConfig {
 
   private final String API_KEY = "Bearer Token";
 
-  /**
-   * Custom open api open api.
-   *
-   * @return the open api
-   */
-  @Bean
+    /**
+     * Custom open api open api.
+     *
+     * @return the open api
+     */
+    @Bean
   public OpenAPI customOpenAPI() {
     OpenAPI openAPI = new OpenAPI().info(
         new Info()

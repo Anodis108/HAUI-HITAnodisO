@@ -21,13 +21,13 @@ public class UploadFileUtil {
 
   private final Cloudinary cloudinary;
 
-  /**
-   * Upload file string.
-   *
-   * @param file the file
-   * @return the string
-   */
-  public String uploadFile(MultipartFile file) {
+    /**
+     * Upload file string.
+     *
+     * @param file the file
+     * @return the string
+     */
+    public String uploadFile(MultipartFile file) {
     try {
       String resourceType = getResourceType(file);
       Map<?, ?> result = cloudinary.uploader().upload(file.getBytes(), ObjectUtils.asMap("resource_type",
@@ -38,13 +38,13 @@ public class UploadFileUtil {
     }
   }
 
-  /**
-   * Upload image string.
-   *
-   * @param bytes the bytes
-   * @return the string
-   */
-  public String uploadImage(byte[] bytes) {
+    /**
+     * Upload image string.
+     *
+     * @param bytes the bytes
+     * @return the string
+     */
+    public String uploadImage(byte[] bytes) {
     try {
       Map<?, ?> result = cloudinary.uploader().upload(bytes, ObjectUtils.asMap("resource_type", "image"));
       return result.get("secure_url").toString();
@@ -53,12 +53,12 @@ public class UploadFileUtil {
     }
   }
 
-  /**
-   * Destroy file with url.
-   *
-   * @param url the url
-   */
-  public void destroyFileWithUrl(String url) {
+    /**
+     * Destroy file with url.
+     *
+     * @param url the url
+     */
+    public void destroyFileWithUrl(String url) {
     int startIndex = url.lastIndexOf("/") + 1;
     int endIndex = url.lastIndexOf(".");
     String publicId = url.substring(startIndex, endIndex);

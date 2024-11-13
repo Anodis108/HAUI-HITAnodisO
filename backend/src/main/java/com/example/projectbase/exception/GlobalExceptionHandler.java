@@ -200,4 +200,15 @@ public class GlobalExceptionHandler {
     return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
   }
 
+  /**
+   * Handle profile already accepted response entity.
+   *
+   * @param ex the ex
+   * @return the response entity
+   */
+  @ExceptionHandler(ProfileAlreadyAccepted.class)
+  public ResponseEntity<String> handleProfileAlreadyAccepted(ProfileAlreadyAccepted ex) {
+      return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+  }
+
 }

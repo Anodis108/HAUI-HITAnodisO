@@ -31,12 +31,12 @@ public class ProjectBaseApplication {
 
   private final PasswordEncoder passwordEncoder;
 
-  /**
-   * The entry point of application.
-   *
-   * @param args the input arguments
-   */
-  public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
     Environment env = SpringApplication.run(ProjectBaseApplication.class, args).getEnvironment();
     String appName = env.getProperty("spring.application.name");
     if (appName != null) {
@@ -51,13 +51,13 @@ public class ProjectBaseApplication {
         + " Application------------------------------");
   }
 
-  /**
-   * Init command line runner.
-   *
-   * @param userInfo the user info
-   * @return the command line runner
-   */
-  @Bean
+    /**
+     * Init command line runner.
+     *
+     * @param userInfo the user info
+     * @return the command line runner
+     */
+    @Bean
   CommandLineRunner init(AdminInfoProperties userInfo) {
     return args -> {
       //init role

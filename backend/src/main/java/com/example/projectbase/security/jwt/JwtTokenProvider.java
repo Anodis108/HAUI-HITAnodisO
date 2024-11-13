@@ -39,14 +39,14 @@ public class JwtTokenProvider {
   @Value("${jwt.refresh.expiration_time}")
   private Integer EXPIRATION_TIME_REFRESH_TOKEN;
 
-  /**
-   * Generate token string.
-   *
-   * @param userPrincipal  the user principal
-   * @param isRefreshToken the is refresh token
-   * @return the string
-   */
-  public String generateToken(UserPrincipal userPrincipal, Boolean isRefreshToken) {
+    /**
+     * Generate token string.
+     *
+     * @param userPrincipal  the user principal
+     * @param isRefreshToken the is refresh token
+     * @return the string
+     */
+    public String generateToken(UserPrincipal userPrincipal, Boolean isRefreshToken) {
     String authorities = userPrincipal.getAuthorities().stream()
         .map(GrantedAuthority::getAuthority)
         .collect(Collectors.joining(","));
@@ -71,13 +71,13 @@ public class JwtTokenProvider {
         .compact();
   }
 
-  /**
-   * Gets authentication by refresh token.
-   *
-   * @param refreshToken the refresh token
-   * @return the authentication by refresh token
-   */
-  public Authentication getAuthenticationByRefreshToken(String refreshToken) {
+    /**
+     * Gets authentication by refresh token.
+     *
+     * @param refreshToken the refresh token
+     * @return the authentication by refresh token
+     */
+    public Authentication getAuthenticationByRefreshToken(String refreshToken) {
     Claims claims = Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(refreshToken).getBody();
     if (!claims.get(CLAIM_TYPE).equals(TYPE_REFRESH) || ObjectUtils.isEmpty(claims.get(AUTHORITIES_KEY))
         || ObjectUtils.isEmpty(claims.get(USERNAME_KEY))) {
@@ -91,53 +91,53 @@ public class JwtTokenProvider {
     return new UsernamePasswordAuthenticationToken(principal, "", authorities);
   }
 
-  /**
-   * Extract claim username string.
-   *
-   * @param token the token
-   * @return the string
-   */
-  public String extractClaimUsername(String token) {
+    /**
+     * Extract claim username string.
+     *
+     * @param token the token
+     * @return the string
+     */
+    public String extractClaimUsername(String token) {
     return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody().get(USERNAME_KEY).toString();
   }
 
-  /**
-   * Extract subject from jwt string.
-   *
-   * @param token the token
-   * @return the string
-   */
-  public String extractSubjectFromJwt(String token) {
+    /**
+     * Extract subject from jwt string.
+     *
+     * @param token the token
+     * @return the string
+     */
+    public String extractSubjectFromJwt(String token) {
     return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody().getSubject();
   }
 
-  /**
-   * Extract expiration from jwt date.
-   *
-   * @param token the token
-   * @return the date
-   */
-  public Date extractExpirationFromJwt(String token) {
+    /**
+     * Extract expiration from jwt date.
+     *
+     * @param token the token
+     * @return the date
+     */
+    public Date extractExpirationFromJwt(String token) {
     return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody().getExpiration();
   }
 
-  /**
-   * Is token expired boolean.
-   *
-   * @param token the token
-   * @return the boolean
-   */
-  public Boolean isTokenExpired(String token) {
+    /**
+     * Is token expired boolean.
+     *
+     * @param token the token
+     * @return the boolean
+     */
+    public Boolean isTokenExpired(String token) {
     return extractExpirationFromJwt(token).before(new Date());
   }
 
-  /**
-   * Validate token boolean.
-   *
-   * @param token the token
-   * @return the boolean
-   */
-  public boolean validateToken(String token) {
+    /**
+     * Validate token boolean.
+     *
+     * @param token the token
+     * @return the boolean
+     */
+    public boolean validateToken(String token) {
     try {
       Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token);
       return true;

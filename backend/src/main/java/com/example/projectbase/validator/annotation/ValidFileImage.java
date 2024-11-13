@@ -15,25 +15,25 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = {FileImageValidator.class})
 public @interface ValidFileImage {
 
-  /**
-   * Message string.
-   *
-   * @return the string
-   */
-  String message() default "invalid.file-image";
+    /**
+     * Message string.
+     *
+     * @return the string
+     */
+    String message() default "invalid.file-image";
 
-  /**
-   * Groups class [ ].
-   *
-   * @return the class [ ]
-   */
-  Class<?>[] groups() default {};
+    /**
+     * Groups class [ ].
+     *
+     * @return the class [ ]
+     */
+    Class<?>[] groups() default {};
 
-  /**
-   * Payload class [ ].
-   *
-   * @return the class [ ]
-   */
-  Class<? extends Payload>[] payload() default {};
+    /**
+     * Payload class [ ].
+     *
+     * @return the class [ ]
+     */
+    Class<? extends Payload>[] payload() default {};
 
 }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-11-12T12:48:41+0700",
+    date = "2024-11-13T21:26:47+0700",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.13 (Ubuntu)"
 )
 @Component
@@ -39,7 +39,7 @@ public class ProfileMapperImpl implements ProfileMapper {
 
         ProfileResponseDto profileResponseDto = new ProfileResponseDto();
 
-        profileResponseDto.setCreatedBy( profileUserFirstName( profile ) );
+        profileResponseDto.setCreatedBy( profileUserUsername( profile ) );
         profileResponseDto.setId( profile.getId() );
         profileResponseDto.setName( profile.getName() );
         profileResponseDto.setPhoneNumber( profile.getPhoneNumber() );
@@ -51,7 +51,7 @@ public class ProfileMapperImpl implements ProfileMapper {
         return profileResponseDto;
     }
 
-    private String profileUserFirstName(Profile profile) {
+    private String profileUserUsername(Profile profile) {
         if ( profile == null ) {
             return null;
         }
@@ -59,10 +59,10 @@ public class ProfileMapperImpl implements ProfileMapper {
         if ( user == null ) {
             return null;
         }
-        String firstName = user.getFirstName();
-        if ( firstName == null ) {
+        String username = user.getUsername();
+        if ( username == null ) {
             return null;
         }
-        return firstName;
+        return username;
     }
 }

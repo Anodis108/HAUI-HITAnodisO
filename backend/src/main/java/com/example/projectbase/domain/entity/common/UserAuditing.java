@@ -10,6 +10,9 @@ import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 
+/**
+ * The type User auditing.
+ */
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 @Setter

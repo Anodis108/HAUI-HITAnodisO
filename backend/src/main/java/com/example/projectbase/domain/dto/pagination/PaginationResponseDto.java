@@ -20,13 +20,13 @@ public class PaginationResponseDto<T> {
 
   private List<T> items;
 
-  /**
-   * Instantiates a new Pagination response dto.
-   *
-   * @param meta  the meta
-   * @param items the items
-   */
-  public PaginationResponseDto(PagingMeta meta, List<T> items) {
+    /**
+     * Instantiates a new Pagination response dto.
+     *
+     * @param meta  the meta
+     * @param items the items
+     */
+    public PaginationResponseDto(PagingMeta meta, List<T> items) {
     this.meta = meta;
 
     if (items == null) {
@@ -36,12 +36,12 @@ public class PaginationResponseDto<T> {
     }
   }
 
-  /**
-   * Gets items.
-   *
-   * @return the items
-   */
-  public List<T> getItems() {
+    /**
+     * Gets items.
+     *
+     * @return the items
+     */
+    public List<T> getItems() {
     return items == null ? null : new ArrayList<>(items);
   }
 

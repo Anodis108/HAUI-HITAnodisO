@@ -18,14 +18,14 @@ public class RepositoryAspect {
   @Value("${application.repository.query-limit-warning-ms:60}")
   private int executionLimitMs;
 
-  /**
-   * Log execution time object.
-   *
-   * @param joinPoint the join point
-   * @return the object
-   * @throws Throwable the throwable
-   */
-  @Around("execution(* com.example.projectbase.repository.*.*(..))")
+    /**
+     * Log execution time object.
+     *
+     * @param joinPoint the join point
+     * @return the object
+     * @throws Throwable the throwable
+     */
+    @Around("execution(* com.example.projectbase.repository.*.*(..))")
   public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
     long start = System.currentTimeMillis();
     Object proceed = joinPoint.proceed();

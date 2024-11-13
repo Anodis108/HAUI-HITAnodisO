@@ -22,24 +22,24 @@ public class PaginationRequestDto {
   @Parameter(description = "Number of records per page")
   private Integer pageSize = CommonConstant.ZERO_INT_VALUE;
 
-  /**
-   * Gets page num.
-   *
-   * @return the page num
-   */
-  public int getPageNum() {
+    /**
+     * Gets page num.
+     *
+     * @return the page num
+     */
+    public int getPageNum() {
     if (pageNum < 1) {
       pageNum = CommonConstant.ONE_INT_VALUE;
     }
     return pageNum - 1;
   }
 
-  /**
-   * Gets page size.
-   *
-   * @return the page size
-   */
-  public int getPageSize() {
+    /**
+     * Gets page size.
+     *
+     * @return the page size
+     */
+    public int getPageSize() {
     if (pageSize < 1) {
       pageSize = CommonConstant.PAGE_SIZE_DEFAULT;
     }

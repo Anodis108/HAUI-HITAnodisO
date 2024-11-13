@@ -23,13 +23,13 @@ public class PaginationSortRequestDto extends PaginationRequestDto {
   @Parameter(description = "Sorting criteria - Default sort order is descending")
   private Boolean isAscending = Boolean.FALSE;
 
-  /**
-   * Gets sort by.
-   *
-   * @param constant the constant
-   * @return the sort by
-   */
-  public String getSortBy(SortByDataConstant constant) {
+    /**
+     * Gets sort by.
+     *
+     * @param constant the constant
+     * @return the sort by
+     */
+    public String getSortBy(SortByDataConstant constant) {
     return constant.getSortBy(sortBy);
   }
 

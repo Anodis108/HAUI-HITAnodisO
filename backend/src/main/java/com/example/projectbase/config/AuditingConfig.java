@@ -18,12 +18,12 @@ import java.util.Optional;
 @EnableJpaAuditing
 public class AuditingConfig {
 
-  /**
-   * Auditor provider auditor aware.
-   *
-   * @return the auditor aware
-   */
-  @Bean
+    /**
+     * Auditor provider auditor aware.
+     *
+     * @return the auditor aware
+     */
+    @Bean
   public AuditorAware<String> auditorProvider() {
     return new AuditorAwareImpl();
   }
