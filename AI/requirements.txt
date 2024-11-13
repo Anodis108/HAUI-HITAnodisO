@@ -1,0 +1,5 @@
+fastapi[all]
+fastapi
+opencv-python
+numpy
+PyMuPDF
