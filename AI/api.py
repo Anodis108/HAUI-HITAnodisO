@@ -49,7 +49,8 @@ def remove_background(image_path):
     return img_rgba
 
 @app.post("/stamp-pdf/")
-async def stamp_pdf(pdf_file: UploadFile = File(...), stamp_image: UploadFile = File(...), x: int = 350, y: int = 500, stamp_width: int = 150, stamp_height: int = 150):
+async def stamp_pdf(pdf_file: UploadFile = File(...), stamp_image: UploadFile = File(...), x: int = 350, y: int = 500, stamp_width: int = 150, stamp_height: int = 150, page_number: int = 1):
+
     # Lưu các tệp đã tải lên vào hệ thống tệp tạm thời
     pdf_path = f"temp_{pdf_file.filename}"
     stamp_path = f"temp_{stamp_image.filename}"
@@ -72,7 +73,12 @@ async def stamp_pdf(pdf_file: UploadFile = File(...), stamp_image: UploadFile = 
 
     # Mở tệp PDF để chèn hình ảnh
     document = fitz.open(pdf_path)
-    page = document.load_page(1)  # 0 đại diện cho trang đầu tiên
+
+    if page_number > len(document):
+        document.close()
+        return {"error": f"Invalid page number. The PDF has {len(document)} pages."}
+    page = document.load_page(page_number - 1)  # Chọn trang cụ thể - 1 vì index bắt đầu từ 0
+
 
     # Chèn dấu mộc lên PDF
     page.insert_image(
@@ -94,3 +100,4 @@ async def stamp_pdf(pdf_file: UploadFile = File(...), stamp_image: UploadFile = 
 
     # Trả về file PDF dưới dạng phản hồi
     return FileResponse(output_pdf_path, media_type='application/pdf', filename='stamped_enrollment_form.pdf')
+
