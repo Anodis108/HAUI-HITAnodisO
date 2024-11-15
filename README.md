@@ -7,7 +7,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/Anodis108/HAUI-HITAnodisO 'Github contributors')](https://github.com/Anodis108/HAUI-HITAnodisO/graphs/contributors)
 ![](./docs/images/banner.png)
 
-# Ứng Dụng Một Cửa Hỗ Trợ Đóng Dấu Đơn Từ [![Demo](https://img.shields.io/badge/Demo-2ea44f?style=for-the-badge)](http://demo-link.com) [![Documentation](https://img.shields.io/badge/Documentation-blue?style=for-the-badge)](https://project-docs.com)
+# Ứng Dụng Hành Chính Một Cửa Hỗ Trợ Đóng Dấu Đơn Từ [![Demo](https://img.shields.io/badge/Demo-2ea44f?style=for-the-badge)](http://demo-link.com) [![Documentation](https://img.shields.io/badge/Documentation-blue?style=for-the-badge)](https://project-docs.com)
 
 <a href="https://github.com/Anodis108/HAUI-HITAnodisO/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">Bug Report ⚠️</a>
 <a href="https://github.com/Anodis108/HAUI-HITAnodisO/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=">Request Feature 👩‍💻</a>
