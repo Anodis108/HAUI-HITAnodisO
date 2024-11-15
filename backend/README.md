@@ -100,10 +100,10 @@ docker build -t project-base .
 -   Sau khi xây dựng image, bạn có thể chạy container bằng lệnh sau:
 
 ```bash
-docker run -d -p 8000:8080 --name my-app project-base:1.0
+docker run -d -p 8080:8080 --name my-app project-base:1.0
 ```
 - `-d`: Chạy container ở chế độ nền (detached mode).
-- `-p 8000:8080`: Chuyển tiếp cổng 8000 từ máy host sang cổng 8080 của container.
+- `-p 8080:8080`: Chuyển tiếp cổng 8000 từ máy host sang cổng 8080 của container.
 
 
 ## PORT BINDING
@@ -123,7 +123,7 @@ PORT
 <td>API Gateway</td>
 <td>
 
-8000:8080
+8080:8080
 
 </td>
 
