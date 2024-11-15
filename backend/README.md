@@ -3,9 +3,9 @@
 # **Yêu Cầu Hệ Thống**
 ### Những yêu cầu về môi trường chạy dự án:
 
-- ### **Java**: Java 17 trở lên.
-- ### **Maven**: 4.0.0 hoặc mới hơn.
-- ### **Database**: MySQL.
+- **Java**: Java 17 trở lên.
+- **Maven**: 4.0.0 hoặc mới hơn.
+- **Database**: MySQL.
 
 ---
 
@@ -31,15 +31,15 @@ project
 │   │       ├── static                   # Các tài nguyên tĩnh
 ├── pom.xml                     # File cấu hình Maven
 ```
-## Giải thích từng thư mục
-- ### `config`: Chứa các cấu hình của ứng dụng (các bean, cài đặt bảo mật, cấu hình database).
-- ### `controller`: Lớp xử lý yêu cầu HTTP.
-- ### `domain`: Chứa các entity ánh xạ với cơ sở dữ liệu.
-- ### `repository`: Tầng giao tiếp với cơ sở dữ liệu.
-- ### `service`: Xử lý logic của ứng dụng.
-- ### `util`: Các tiện ích dùng chung.
-- ### `application.properties`: File cấu hình chính.
-- ### `pom.xml`: File cấu hình Maven.
+### Giải thích từng thư mục
+- `config`: Chứa các cấu hình của ứng dụng (các bean, cài đặt bảo mật, cấu hình database).
+- `controller`: Lớp xử lý yêu cầu HTTP.
+- `domain`: Chứa các entity ánh xạ với cơ sở dữ liệu.
+- `repository`: Tầng giao tiếp với cơ sở dữ liệu.
+- `service`: Xử lý logic của ứng dụng.
+- `util`: Các tiện ích dùng chung.
+- `application.properties`: File cấu hình chính.
+- `pom.xml`: File cấu hình Maven.
 ---
 # Hệ thống
 ### Thiết kế theo kiến trúc phân lớp như hình vẽ bên dưới:
