@@ -52,14 +52,16 @@ Dự án tập trung vào các chức năng chính sau:
 
 Hệ thống sử dụng kiến trúc **Low-Code Development Platform (LCDP)** để dễ dàng cấu hình và phát triển các module mà không cần phải viết mã quá nhiều. Các công nghệ sử dụng trong hệ thống bao gồm:
 
-- **Next.js**: Xây dựng giao diện người dùng.
-- **Kong API Gateway**: Quản lý các API trong hệ thống.
-- **Spring Boot**: Dựng các API backend cho hệ thống.
-- **OpenCV**: Sử dụng để nhận diện hình ảnh và đóng dấu lên các đơn từ.
-- **PDF.js**: Đọc và xử lý các tệp PDF.
-- **Docker**: Quản lý các dịch vụ container.
-- **MySQL**: Lưu trữ thông tin tài liệu và dấu.
-- **Redis**: Cơ sở dữ liệu NoSQL dùng cho lưu trữ tạm thời.
+- [Self-hosting](https://docs.lowcoder.cloud/lowcoder-documentation/setup-and-run/self-hosting): Xây dựng giao diện người dùng.
+- [Spring Boot](https://spring.io/projects/spring-boot): Dựng các API backend cho hệ thống.
+- [OpenCV](https://opencv.org/about/): Sử dụng để nhận diện hình ảnh và đóng dấu lên các đơn từ.
+- [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/): Đọc và xử lý các tệp PDF.
+- [Docker](https://www.docker.com/): Containerize các service.
+- [Docker Compose](https://docs.docker.com/compose/): Quản lý các container.
+- [MySQL](https://www.mysql.com/): Cơ sở dữ liệu quan hệ.
+- [FastAPI]:Xây dựng các API web nhanh chóng với Python
+
+
 
 <img loading="lazy" src="./docs/images/system_architecture.svg" alt="System Architecture" width="100%" height=600>
 
