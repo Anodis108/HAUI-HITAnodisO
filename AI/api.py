@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse
 import fitz  # PyMuPDF
