@@ -43,7 +43,7 @@ project
 ---
 # Hệ thống
 ### Thiết kế theo kiến trúc phân lớp như hình vẽ bên dưới:
-![img.png](architecture.png)
+![img.png](../docs/images/architecture.png)
 
 ### Auth Controller
 * Auth Controller: Service xử lý việc đăng nhập, đăng ký, đăng xuất, xác thực người dùng.

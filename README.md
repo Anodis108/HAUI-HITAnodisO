@@ -107,7 +107,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 * Delete PDF [DELETE]: ```/api/v1/pdf```
 ---
 ## Thiết kế Database
-![database.png](database.png)
+![database.png](docs/images/database.png)
 ---
 ## Hướng Dẫn Cài Đặt
 
