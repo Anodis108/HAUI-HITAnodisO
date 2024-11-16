@@ -20,6 +20,11 @@ public class UrlConstant {
      */
     public static final String LOGOUT = PRE_FIX + "/logout";
 
+    /**
+     * The constant SIGNUP.
+     */
+    public static final String SIGNUP = PRE_FIX + "/signup";
+
     private Auth() {
     }
   }
