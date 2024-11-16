@@ -27,12 +27,14 @@
 2. [Chức Năng Chính](#chức-năng-chính)
 3. [Tổng Quan Hệ Thống](#👩‍💻-tổng-quan-hệ-thống)
 4. [Cấu Trúc Thư Mục](#cấu-trúc-thư-mục)
-5. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
+5. [Danh sách API](#api-list)
+6. [Thiết kế Database](#thiết-kế-database)
+7. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
     - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
     - [🔨 Cài Đặt](#🔨-cài-đặt)
-6. [CI/CD](#ci/cd)
-7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
-8. [📝 License](#📝-license)
+8. [CI/CD](#ci/cd)
+9. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
+10. [📝 License](#📝-license)
 
 ---
 
@@ -89,7 +91,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 ## Cấu trúc thư mục
 
 - [Backend](backend/README.md): Chứa các service backend, API, và các chức năng xử lý dấu.
-<!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
+- [Frontend](frontend/README.md): Giao diện người dùng, dễ sử dụng và có thể thao tác trên đó
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
 
