@@ -35,8 +35,8 @@
 
 ## Giới Thiệu
 
-- [Ứng dụng một cửa]() giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
-- **Công nghệ LCDP** cho phép các công cụ cấu hình dễ dàng và triển khai nhanh chóng mà không cần phải lập trình nhiều.
+- [Ứng dụng hành chính một cửa](https://pbgdpl.haiphong.gov.vn/Hoi-dap-phap-luat/Bo-phan-Mot-cua-la-gi-Nhiem-vu-cua-Bo-phan-Mot-cua-98905.html) giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
+- [Công nghệ LCDP](https://vfossa.vn/tin-tuc/gioi-thieu-chu-de-cuoc-thi-phan-mem-nguon-mo-olp-2024-709.html) cho phép các công cụ cấu hình dễ dàng và triển khai nhanh chóng mà không cần phải lập trình nhiều.
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
 
 ## Chức Năng Chính
@@ -46,11 +46,11 @@ Dự án tập trung vào các chức năng chính sau:
 - 🖼️ **Chụp và nhận diện các đơn từ** từ hình ảnh hoặc tệp PDF.
 - 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
 - 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
-- 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử.
+<!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
 
 ## 👩‍💻 Tổng Quan Hệ Thống
 
-Hệ thống sử dụng kiến trúc **Low-Code Development Platform (LCDP)** để dễ dàng cấu hình và phát triển các module mà không cần phải viết mã quá nhiều. Các công nghệ sử dụng trong hệ thống bao gồm:
+Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/blog/kien-truc-phan-lop-layered-architecture/) để dễ dàng cấu hình và phát triển các module. Các công nghệ sử dụng trong hệ thống bao gồm:
 
 - [Self-hosting](https://docs.lowcoder.cloud/lowcoder-documentation/setup-and-run/self-hosting): Xây dựng giao diện người dùng.
 - [Spring Boot](https://spring.io/projects/spring-boot): Dựng các API backend cho hệ thống.
@@ -59,18 +59,18 @@ Hệ thống sử dụng kiến trúc **Low-Code Development Platform (LCDP)** �
 - [Docker](https://www.docker.com/): Containerize các service.
 - [Docker Compose](https://docs.docker.com/compose/): Quản lý các container.
 - [MySQL](https://www.mysql.com/): Cơ sở dữ liệu quan hệ.
-- [FastAPI]:Xây dựng các API web nhanh chóng với Python
+- [FastAPI](https://fastapi.tiangolo.com/):Xây dựng các API web nhanh chóng với Python
 
 
 
-<img loading="lazy" src="./docs/images/system_architecture.svg" alt="System Architecture" width="100%" height=600>
+<img loading="lazy" src="docs/images/sysyem_architecture.svg" alt="System Architecture" width="100%" height=600>
 
 ## CI/CD
 
-Dự án sử dụng **Github Actions** để tự động hóa quy trình xây dựng và triển khai:
+Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
 
-- **build-docker.yaml**: Tự động xây dựng và đẩy Docker images lên Docker Hub.
-- **deploy.yaml**: Triển khai hệ thống lên môi trường sản xuất.
+- [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Tự động xây dựng và đẩy Docker images lên Docker Hub.
+- [build_test_maven.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/build_test_maven.yml): Triển khai hệ thống lên môi trường sản xuất.
 
 ## Cấu trúc thư mục
 
@@ -219,7 +219,7 @@ Mọi đóng góp của các bạn đều được trân trọng, đừng ngần
 
 -   Phạm Đăng Đông: dong10082003@gmail.com
 -   Nguyễn Thị Trang: nguyenthitrang.ttd@gmail.com
--   Đỗ Trung Hòa:
+-   Đỗ Trung Hòa: trunghoa2k4@gmail.com
 -   Phạm Văn Hà:
 -   Nguyễn Xuân Hoàng:
 -   Nguyễn Trung Phú:
