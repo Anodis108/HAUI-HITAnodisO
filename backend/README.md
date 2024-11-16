@@ -117,6 +117,7 @@ docker run -d -p 8080:8080 --name my-app project-base:1.0
 -   Sau khi chạy xong, các service sẽ được chạy trên các port như sau:
 
 
+
 <table width="100%">
 
 

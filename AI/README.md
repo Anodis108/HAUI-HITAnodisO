@@ -14,6 +14,7 @@ AI/
 # **Yêu Cầu Hệ Thống** 
 - **Python**: Python 3.10 trở lên.
 
+
 ### Cài đặt môi trường
 
 1. **Cài đặt các thư viện cần thiết từ file `requirements.txt`:**

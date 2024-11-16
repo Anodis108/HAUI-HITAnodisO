@@ -21,7 +21,6 @@
 
 
 ---
-
 ## 🔎 Danh Mục
 
 1. [Giới Thiệu](#Giới-Thiệu)
@@ -38,17 +37,14 @@
 ---
 
 
----
-=======
-
 ## Giới Thiệu
 
 - [Ứng dụng hành chính một cửa](https://pbgdpl.haiphong.gov.vn/Hoi-dap-phap-luat/Bo-phan-Mot-cua-la-gi-Nhiem-vu-cua-Bo-phan-Mot-cua-98905.html) giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
 - [Công nghệ LCDP](https://vfossa.vn/tin-tuc/gioi-thieu-chu-de-cuoc-thi-phan-mem-nguon-mo-olp-2024-709.html) cho phép các công cụ cấu hình dễ dàng và triển khai nhanh chóng mà không cần phải lập trình nhiều.
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
 
-
 ---
+
 
 ## Chức Năng Chính
 # Cần xem lại
@@ -58,7 +54,6 @@ Dự án tập trung vào các chức năng chính sau:
 - 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
 - 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
 <!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
-
 
 
 ---
@@ -80,7 +75,6 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 
 <img loading="lazy" src="docs/images/sysyem_architecture.svg" alt="System Architecture" width="100%" height=600>
 
----
 
 ## CI/CD
 
@@ -89,7 +83,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 
----
+
 
 
 ## Cấu trúc thư mục
