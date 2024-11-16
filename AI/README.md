@@ -10,6 +10,8 @@ AI/
 ├── Dockerfile            # Dockerfile cho container hóa AI module
 └── requirements.txt      # Các thư viện cần thiết cho dự án
 ```
+# **Yêu Cầu Hệ Thống** 
+- **Python**: Python 3.10 trở lên.
 
 ### Cài đặt môi trường
 
