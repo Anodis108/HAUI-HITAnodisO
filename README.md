@@ -43,7 +43,7 @@
 # Cần xem lại
 Dự án tập trung vào các chức năng chính sau:
 
-- 🖼️ **Chụp và nhận diện các đơn từ** từ hình ảnh hoặc tệp PDF.
+- 🖼️ **Nhận các đơn từ** từ hình ảnh hoặc tệp PDF.
 - 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
 - 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
 <!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
@@ -68,15 +68,17 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 ## CI/CD
 
 Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
+![CI/CD](./docs/images/ci_cd.svg)
 
-- [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Tự động xây dựng và đẩy Docker images lên Docker Hub.
-- [build_test_maven.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/build_test_maven.yml): Triển khai hệ thống lên môi trường sản xuất.
+- [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
+
 
 ## Cấu trúc thư mục
 
-- **Backend**: Chứa các service backend, API, và các chức năng xử lý dấu.
-- **Frontend**: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt.
-- **Docs**: Tài liệu về hệ thống và hướng dẫn sử dụng.
+- [Backend](backend/README.md): Chứa các service backend, API, và các chức năng xử lý dấu.
+<!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
+- [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
+- [AI](AI/README.md): Tài liệu về module xử lý ảnh
 
 ## Hướng Dẫn Cài Đặt
 
