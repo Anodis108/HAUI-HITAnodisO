@@ -19,24 +19,26 @@
 - Ứng dụng sử dụng công nghệ Low-Code Development Platform (LCDP) để dễ dàng cấu hình và triển khai.
 - Giảm bớt thủ tục hành chính, giúp tiết kiệm thời gian và chi phí cho các cơ quan chức năng.
 
----
 
+---
 ## 🔎 Danh Mục
 
 1. [Giới Thiệu](#Giới-Thiệu)
 2. [Chức Năng Chính](#chức-năng-chính)
 3. [Tổng Quan Hệ Thống](#👩‍💻-tổng-quan-hệ-thống)
 4. [Cấu Trúc Thư Mục](#cấu-trúc-thư-mục)
-5. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
+5. [Danh sách API](#api-list)
+6. [Thiết kế Database](#thiết-kế-database)
+7. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
     - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
     - [🔨 Cài Đặt](#🔨-cài-đặt)
-6. [CI/CD](#ci/cd)
-7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
-8. [📝 License](#📝-license)
+8. [CI/CD](#ci/cd)
+9. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
+10. [📝 License](#📝-license)
 
 
 ---
-=======
+
 
 ## Giới Thiệu
 
@@ -45,6 +47,7 @@
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
 
 ---
+
 
 ## Chức Năng Chính
 # Cần xem lại
@@ -75,23 +78,24 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 
 <img loading="lazy" src="docs/images/sysyem_architecture.svg" alt="System Architecture" width="100%" height=600>
 
----
 
 ## CI/CD
 
 Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
-![CI/CD](./docs/images/ci_cd.svg)
+![CI/CD](docs/images/ci_cd.svg)
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 
----
+
+
 
 ## Cấu trúc thư mục
 
 - [Backend](backend/README.md): Chứa các service backend, API, và các chức năng xử lý dấu.
-<!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
+- [Frontend](frontend/README.md): Giao diện người dùng, dễ sử dụng và có thể thao tác trên đó
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
+
 
 ---
 ## API List
