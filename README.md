@@ -19,8 +19,8 @@
 - Ứng dụng sử dụng công nghệ Low-Code Development Platform (LCDP) để dễ dàng cấu hình và triển khai.
 - Giảm bớt thủ tục hành chính, giúp tiết kiệm thời gian và chi phí cho các cơ quan chức năng.
 
----
 
+---
 ## 🔎 Danh Mục
 
 1. [Giới Thiệu](#Giới-Thiệu)
@@ -34,9 +34,8 @@
 7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
 8. [📝 License](#📝-license)
 
-
 ---
-=======
+
 
 ## Giới Thiệu
 
@@ -45,6 +44,7 @@
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
 
 ---
+
 
 ## Chức Năng Chính
 # Cần xem lại
@@ -75,7 +75,6 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 
 <img loading="lazy" src="docs/images/sysyem_architecture.svg" alt="System Architecture" width="100%" height=600>
 
----
 
 ## CI/CD
 
@@ -84,7 +83,8 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 
----
+
+
 
 ## Cấu trúc thư mục
 
@@ -92,6 +92,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 <!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
+
 
 ---
 ## API List
