@@ -19,6 +19,7 @@
 - Ứng dụng sử dụng công nghệ Low-Code Development Platform (LCDP) để dễ dàng cấu hình và triển khai.
 - Giảm bớt thủ tục hành chính, giúp tiết kiệm thời gian và chi phí cho các cơ quan chức năng.
 
+
 ---
 
 ## 🔎 Danh Mục
@@ -34,15 +35,14 @@
 7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
 8. [📝 License](#📝-license)
 
-
 ---
-=======
 
 ## Giới Thiệu
 
 - [Ứng dụng hành chính một cửa](https://pbgdpl.haiphong.gov.vn/Hoi-dap-phap-luat/Bo-phan-Mot-cua-la-gi-Nhiem-vu-cua-Bo-phan-Mot-cua-98905.html) giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
 - [Công nghệ LCDP](https://vfossa.vn/tin-tuc/gioi-thieu-chu-de-cuoc-thi-phan-mem-nguon-mo-olp-2024-709.html) cho phép các công cụ cấu hình dễ dàng và triển khai nhanh chóng mà không cần phải lập trình nhiều.
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
+
 
 ---
 
@@ -54,6 +54,7 @@ Dự án tập trung vào các chức năng chính sau:
 - 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
 - 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
 <!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
+
 
 
 ---
@@ -86,12 +87,14 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 
 ---
 
+
 ## Cấu trúc thư mục
 
 - [Backend](backend/README.md): Chứa các service backend, API, và các chức năng xử lý dấu.
 <!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
+
 
 ---
 ## API List
