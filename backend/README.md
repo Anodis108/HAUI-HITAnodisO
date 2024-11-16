@@ -43,7 +43,7 @@ project
 ---
 # Hệ thống
 ### Thiết kế theo kiến trúc phân lớp như hình vẽ bên dưới:
-![img.png](img.png)
+![img.png](architecture.png)
 
 ### Auth Controller
 * Auth Controller: Service xử lý việc đăng nhập, đăng ký, đăng xuất, xác thực người dùng.
@@ -75,7 +75,7 @@ Dự án sử dụng các công nghệ sau:
 * Spring Boot: Framework backend.
 * Hibernate: ORM để giao tiếp với database.
 * MySQL: Hệ quản trị cơ sở dữ liệu.
-* Maven: Công cụ quản lý dependencies.\
+* Maven: Công cụ quản lý dependencies.
 
 ## Pre-requisites - Yêu cầu
 
@@ -109,7 +109,7 @@ docker run -d -p 8080:8080 --name my-app project-base:1.0
 ## PORT BINDING
 
 -   Sau khi chạy xong, các service sẽ được chạy trên các port như sau:
-<table width="100%">
+<table>
 <thead>
 <th>
 Service
