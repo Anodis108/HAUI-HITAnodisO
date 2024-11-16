@@ -1,0 +1,698 @@
+{
+  "applicationInfo": {
+    "name": "Haui-HitAnodisO/UploadFile",
+    "createAt": 1731713572743,
+    "createBy": "67378392f91a261c93cfc40f",
+    "applicationId": "6737da24f91a261c93cfdaa1",
+    "applicationType": 1
+  },
+  "applicationDSL": {
+    "ui": {
+      "layout": {
+        "9cd09cf": {
+          "i": "9cd09cf",
+          "h": 107,
+          "w": 24,
+          "delayCollision": true,
+          "x": 0,
+          "y": 14,
+          "pos": 0
+        },
+        "ee51e3b9": { "i": "ee51e3b9", "pos": 6 }
+      },
+      "items": {
+        "9cd09cf": {
+          "compType": "pageLayout",
+          "comp": {
+            "container": {
+              "header": {
+                "layout": {
+                  "cbe53530": { "i": "cbe53530", "h": 8, "w": 2, "x": 0, "y": 0, "pos": 1 },
+                  "b9f1587e": { "i": "b9f1587e", "h": 7, "w": 1, "x": 22, "y": 1, "pos": 5 },
+                  "e39568bd": { "i": "e39568bd", "h": 5, "w": 7, "x": 14, "y": 2, "pos": 2 },
+                  "3e9501d7": { "i": "3e9501d7", "h": 5, "w": 5, "x": 18, "y": 8, "pos": 2 }
+                },
+                "items": {
+                  "cbe53530": {
+                    "compType": "image",
+                    "comp": {
+                      "src": "https://cdn-001.haui.edu.vn//img/logo-haui-size.png",
+                      "style": { "padding": "0" },
+                      "autoHeight": "fixed",
+                      "restrictPaddingOnRotation": "image",
+                      "preventStyleOverwriting": false,
+                      "appliedThemeId": "",
+                      "version": "latest"
+                    },
+                    "name": "image1"
+                  },
+                  "3e9501d7": {
+                    "compType": "navigation",
+                    "comp": {
+                      "logoEvent": [
+                        {
+                          "name": "click",
+                          "handler": {
+                            "compType": "empty",
+                            "comp": {},
+                            "condition": "",
+                            "slowdown": "debounce",
+                            "delay": ""
+                          }
+                        }
+                      ],
+                      "horizontalAlignment": "justify",
+                      "style": { "margin": "0px 8px", "textSize": "16px" },
+                      "items": [
+                        {
+                          "label": "Trang chủ",
+                          "active": "true",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6737d161f91a261c93cfd8c5" },
+                                  "query": [{}],
+                                  "hash": [{}],
+                                  "inNewTab": true
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Đăng nhập",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6737c474f91a261c93cfd041" },
+                                  "query": [{}],
+                                  "hash": [{}]
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Đăng ký",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6737a2f5f91a261c93cfcaf9" },
+                                  "query": [{}],
+                                  "hash": [{}]
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "hidden": "{{localStorage.values['access-token']}}",
+                      "preventStyleOverwriting": false,
+                      "appliedThemeId": "",
+                      "version": "latest"
+                    },
+                    "name": "navigation1"
+                  },
+                  "e39568bd": {
+                    "compType": "navigation",
+                    "comp": {
+                      "logoEvent": [
+                        {
+                          "name": "click",
+                          "handler": {
+                            "compType": "empty",
+                            "comp": {},
+                            "condition": "",
+                            "slowdown": "debounce",
+                            "delay": ""
+                          }
+                        }
+                      ],
+                      "horizontalAlignment": "justify",
+                      "style": { "margin": "0px 8px", "textSize": "16px" },
+                      "items": [
+                        {
+                          "label": "Trang chủ",
+                          "active": "false",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6737d161f91a261c93cfd8c5" },
+                                  "query": [{}],
+                                  "hash": [{}]
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Tạo hồ sơ",
+                          "active": "false",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6738506cf91a261c93cfe8a1" },
+                                  "query": [{}],
+                                  "hash": [{}]
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Danh sách hồ sơ",
+                          "active": "true",
+                          "onEvent": [
+                            {
+                              "name": "click",
+                              "handler": {
+                                "compType": "openAppPage",
+                                "comp": {
+                                  "applicationId": { "applicationId": "6738718ef91a261c93cfeb1e" },
+                                  "query": [{}],
+                                  "hash": [{}]
+                                },
+                                "condition": "",
+                                "slowdown": "debounce",
+                                "delay": ""
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "hidden": "{{!localStorage.values['access-token']}}",
+                      "preventStyleOverwriting": false,
+                      "appliedThemeId": "",
+                      "version": "latest"
+                    },
+                    "name": "navigation2"
+                  },
+                  "b9f1587e": {
+                    "compType": "avatar",
+                    "comp": {
+                      "icon": "/icon:solid/user",
+                      "iconSize": "40",
+                      "shape": "circle",
+                      "title": "",
+                      "src": "https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg",
+                      "avatarLabel": "",
+                      "avatarCatption": "",
+                      "labelPosition": "right",
+                      "alignmentPosition": "left",
+                      "enableDropdownMenu": true,
+                      "options": {
+                        "optionType": "manual",
+                        "manual": {
+                          "manual": [
+                            {
+                              "label": "Cập nhập thông tin",
+                              "prefixIcon": "/icon:regular/address-book",
+                              "onEvent": [
+                                {
+                                  "name": "click",
+                                  "handler": {
+                                    "compType": "openAppPage",
+                                    "comp": {
+                                      "applicationId": {
+                                        "applicationId": "67383620f91a261c93cfe2e8"
+                                      },
+                                      "query": [{}],
+                                      "hash": [{}]
+                                    },
+                                    "condition": "",
+                                    "slowdown": "debounce",
+                                    "delay": ""
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "label": "Thay đổi mật khẩu",
+                              "prefixIcon": "/icon:regular/copy",
+                              "onEvent": [
+                                {
+                                  "name": "click",
+                                  "handler": {
+                                    "compType": "openAppPage",
+                                    "comp": {
+                                      "applicationId": {
+                                        "applicationId": "67384037f91a261c93cfe5f6"
+                                      },
+                                      "query": [{}],
+                                      "hash": [{}]
+                                    },
+                                    "condition": "",
+                                    "slowdown": "debounce",
+                                    "delay": ""
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "label": "Đăng xuất",
+                              "prefixIcon": "/icon:antd/logoutoutlined",
+                              "onEvent": [
+                                {
+                                  "name": "click",
+                                  "handler": {
+                                    "compType": "executeQuery",
+                                    "comp": { "queryName": "logout" },
+                                    "condition": "",
+                                    "slowdown": "debounce",
+                                    "delay": ""
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "mapData": { "data": "[]" }
+                      },
+                      "badgeType": "number",
+                      "badgeCount": "0",
+                      "badgeSize": "default",
+                      "overflowCount": "99",
+                      "badgeTitle": "",
+                      "hidden": "{{!localStorage.values['access-token']}}",
+                      "preventStyleOverwriting": false,
+                      "appliedThemeId": "",
+                      "version": "latest"
+                    },
+                    "name": "avatar1"
+                  }
+                }
+              },
+              "sider": { "layout": {} },
+              "body": {
+                "0": {
+                  "view": {
+                    "layout": {
+                      "9e4a52fe": { "i": "9e4a52fe", "h": 18, "w": 11, "x": 9, "y": 5, "pos": 1 },
+                      "f0b7f255": {
+                        "i": "f0b7f255",
+                        "h": 60,
+                        "w": 8,
+                        "delayCollision": true,
+                        "x": 15,
+                        "y": 24,
+                        "pos": 3
+                      },
+                      "5c43c122": { "i": "5c43c122", "h": 34, "w": 5, "x": 9, "y": 25, "pos": 4 }
+                    },
+                    "items": {
+                      "9e4a52fe": {
+                        "compType": "text",
+                        "comp": {
+                          "text": "Gửi file hồ sơ của bạn bằng cách nhấn vào nút upload bên dưới nhé  ☘️ ",
+                          "autoHeight": "fixed",
+                          "type": "markdown",
+                          "horizontalAlignment": "left",
+                          "contentScrollBar": true,
+                          "verticalAlignment": "center",
+                          "style": {
+                            "background": "#F5F5F600",
+                            "margin": "0",
+                            "padding": "0",
+                            "text": "#FDFFFF",
+                            "textSize": "32px",
+                            "textWeight": "900",
+                            "fontFamily": "\"system-ui\", \"-apple-system\", \"Segoe UI\", \"Roboto\", \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+                            "lineHeight": "16px"
+                          },
+                          "margin": { "left": "", "right": "", "top": "", "bottom": "" },
+                          "padding": { "left": "", "right": "", "top": "", "bottom": "" },
+                          "preventStyleOverwriting": false,
+                          "appliedThemeId": "",
+                          "version": "latest"
+                        },
+                        "name": "title"
+                      },
+                      "f0b7f255": {
+                        "compType": "container",
+                        "comp": {
+                          "container": {
+                            "header": {
+                              "layout": {
+                                "f7c7e57": { "i": "f7c7e57", "h": 5, "w": 24, "x": 0, "y": 0 }
+                              },
+                              "items": {
+                                "f7c7e57": {
+                                  "compType": "text",
+                                  "comp": {
+                                    "text": "### Displayed Container Title",
+                                    "autoHeight": "auto",
+                                    "type": "markdown",
+                                    "horizontalAlignment": "left",
+                                    "contentScrollBar": true,
+                                    "verticalAlignment": "center",
+                                    "margin": { "left": "", "right": "", "top": "", "bottom": "" },
+                                    "padding": { "left": "", "right": "", "top": "", "bottom": "" },
+                                    "preventStyleOverwriting": false,
+                                    "appliedThemeId": "",
+                                    "version": "latest"
+                                  },
+                                  "name": "containerTitle1"
+                                }
+                              }
+                            },
+                            "body": {
+                              "0": {
+                                "view": {
+                                  "layout": {
+                                    "2cbe7929": {
+                                      "i": "2cbe7929",
+                                      "h": 28,
+                                      "w": 11,
+                                      "x": 7,
+                                      "y": 8,
+                                      "pos": 7
+                                    },
+                                    "51e0ee0b": {
+                                      "i": "51e0ee0b",
+                                      "h": 13,
+                                      "w": 15,
+                                      "x": 5,
+                                      "y": 39,
+                                      "pos": 8
+                                    }
+                                  },
+                                  "items": {
+                                    "2cbe7929": {
+                                      "compType": "image",
+                                      "comp": {
+                                        "src": "   https://cdn-icons-png.flaticon.com/512/10741/10741248.png ",
+                                        "style": { "border": "#ECECED", "borderWidth": "0" },
+                                        "autoHeight": "fixed",
+                                        "restrictPaddingOnRotation": "image",
+                                        "preventStyleOverwriting": false,
+                                        "appliedThemeId": "",
+                                        "version": "latest"
+                                      },
+                                      "name": "image2"
+                                    },
+                                    "51e0ee0b": {
+                                      "compType": "file",
+                                      "comp": {
+                                        "text": "Upload",
+                                        "uploadType": "single",
+                                        "fileType": "[\".pdf\"]",
+                                        "showUploadList": true,
+                                        "onEvent": [
+                                          {
+                                            "name": "change",
+                                            "handler": {
+                                              "compType": "executeQuery",
+                                              "comp": { "queryName": "uploadFile" },
+                                              "condition": "",
+                                              "slowdown": "debounce",
+                                              "delay": ""
+                                            }
+                                          }
+                                        ],
+                                        "style": {
+                                          "background": "#65B7CA",
+                                          "padding": "16px 16px",
+                                          "text": "#ffffff",
+                                          "textWeight": "900",
+                                          "radius": "48px"
+                                        },
+                                        "prefixIcon": "/icon:solid/arrow-up-from-bracket",
+                                        "minSize": "1kb",
+                                        "maxSize": "10 MB",
+                                        "dataTestId": "#fileInput",
+                                        "preventStyleOverwriting": true,
+                                        "appliedThemeId": "",
+                                        "version": "latest"
+                                      },
+                                      "name": "file1"
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "footer": { "layout": {} },
+                            "showHeader": false,
+                            "showBody": true,
+                            "autoHeight": "fixed",
+                            "showVerticalScrollbar": false,
+                            "horizontalGridCells": 24,
+                            "scrollbars": false,
+                            "style": {
+                              "border": "#65B7CA",
+                              "radius": "24px",
+                              "borderWidth": "1px"
+                            },
+                            "bodyStyle": { "background": "#FFFFFF" },
+                            "appliedThemeId": ""
+                          },
+                          "preventStyleOverwriting": false,
+                          "appliedThemeId": "",
+                          "version": "latest"
+                        },
+                        "name": "container1"
+                      },
+                      "5c43c122": {
+                        "compType": "text",
+                        "comp": {
+                          "text": "### Lưu ý:\n👉 Nộp duy nhất một file pdf có thể chỉnh sửa lại.\n  \n👉 File pdf có nội dung giống tên hồ sơ bạn đã viết.\n\n  👉 Tên file PDF up lên cũng là tiếng việt không dấu không khoảng cách nhé.\n",
+                          "autoHeight": "auto",
+                          "type": "markdown",
+                          "horizontalAlignment": "left",
+                          "contentScrollBar": true,
+                          "verticalAlignment": "center",
+                          "style": { "padding": "12px 16px", "radius": "24px" },
+                          "margin": { "left": "", "right": "", "top": "", "bottom": "" },
+                          "padding": { "left": "", "right": "", "top": "", "bottom": "" },
+                          "preventStyleOverwriting": false,
+                          "appliedThemeId": "",
+                          "version": "latest"
+                        },
+                        "name": "text1"
+                      }
+                    }
+                  }
+                }
+              },
+              "footer": { "layout": {} },
+              "showHeader": true,
+              "showSider": false,
+              "innerSider": false,
+              "siderCollapsible": false,
+              "siderCollapsed": false,
+              "siderRight": false,
+              "siderWidth": "0",
+              "siderCollapsedWidth": "0",
+              "horizontalGridCells": 24,
+              "autoHeight": "fixed",
+              "siderScrollbars": false,
+              "contentScrollbars": false,
+              "mainScrollbars": false,
+              "style": {
+                "border": "#E1E3EA",
+                "radius": "0",
+                "borderWidth": "0",
+                "margin": "0",
+                "padding": "0"
+              },
+              "bodyStyle": {
+                "backgroundImage": "https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg",
+                "backgroundImagePosition": "15% 20%"
+              },
+              "appliedThemeId": ""
+            },
+            "preventStyleOverwriting": false,
+            "appliedThemeId": "",
+            "version": "latest"
+          },
+          "name": "pageLayout1"
+        },
+        "ee51e3b9": {
+          "compType": "chartsGeoMap",
+          "comp": {
+            "mode": "map",
+            "data": "[\n  {\n    \"date\": \"2021-09\",\n    \"department\": \"Administration\",\n    \"spending\": 9003,\n    \"budget\": 8000\n  },\n  {\n    \"date\": \"2021-09\",\n    \"department\": \"Finance\",\n    \"spending\": 3033,\n    \"budget\": 4000\n  },\n  {\n    \"date\": \"2021-09\",\n    \"department\": \"Sales\",\n    \"spending\": 9230,\n    \"budget\": 8000\n  },\n  {\n    \"date\": \"2021-10\",\n    \"department\": \"Administration\",\n    \"spending\": 13032,\n    \"budget\": 15000\n  },\n  {\n    \"date\": \"2021-10\",\n    \"department\": \"Finance\",\n    \"spending\": 2300,\n    \"budget\": 5000\n  },\n  {\n    \"date\": \"2021-10\",\n    \"department\": \"Sales\",\n    \"spending\": 7323.5,\n    \"budget\": 8000\n  },\n  {\n    \"date\": \"2021-11\",\n    \"department\": \"Administration\",\n    \"spending\": 13000,\n    \"budget\": 16023\n  },\n  {\n    \"date\": \"2021-11\",\n    \"department\": \"Finance\",\n    \"spending\": 3569.5,\n    \"budget\": 3000\n  },\n  {\n    \"date\": \"2021-11\",\n    \"department\": \"Sales\",\n    \"spending\": 10000,\n    \"budget\": 9932\n  },\n  {\n    \"date\": \"2021-12\",\n    \"department\": \"Administration\",\n    \"spending\": 18033,\n    \"budget\": 20000\n  },\n  {\n    \"date\": \"2021-12\",\n    \"department\": \"Finance\",\n    \"spending\": 4890,\n    \"budget\": 4500\n  },\n  {\n    \"date\": \"2021-12\",\n    \"department\": \"Sales\",\n    \"spending\": 9322,\n    \"budget\": 8000\n  }\n]",
+            "xAxisKey": "date",
+            "xAxisDirection": "horizontal",
+            "series": [
+              { "columnName": "spending", "seriesName": "spending", "dataIndex": "ae06aac9" },
+              { "columnName": "budget", "seriesName": "budget", "dataIndex": "1fbbb50f" }
+            ],
+            "xConfig": { "type": "default" },
+            "yConfig": { "yAxisType": "value" },
+            "legendConfig": { "position": "bottom" },
+            "chartConfig": { "compType": "bar", "comp": { "type": "basicBar" } },
+            "echartsOption": "{\n  \"data\": [\n    {\n      \"value\": 100,\n      \"name\": \"Show\",\n      \"color\": \"#fc8452\"\n    },\n    {\n      \"value\": 80,\n      \"name\": \"Click\",\n      \"color\": \"#9a60b4\"\n    },\n    {\n      \"value\": 60,\n      \"name\": \"Visit\",\n      \"color\": \"#fac858\"\n    },\n    {\n      \"value\": 40,\n      \"name\": \"Query\",\n      \"color\": \"#ee6666\"\n    },\n    {\n      \"value\": 20,\n      \"name\": \"Buy\",\n      \"color\": \"#3ba272\"\n    }\n  ]\n}",
+            "echartsTitle": "Data Display",
+            "echartsLegendConfig": { "position": "bottom" },
+            "echartsLabelConfig": { "position": "inside" },
+            "echartsConfig": { "compType": "funnel", "comp": {} },
+            "tooltip": true,
+            "legendVisibility": true,
+            "mapApiKey": "",
+            "mapZoomLevel": "3",
+            "mapCenterLng": "15.932644",
+            "mapCenterLat": "50.942063",
+            "mapOptions": "{\n  \"tooltip\": {\n    \"trigger\": \"item\"\n  },\n  \"animation\": true,\n  \"series\": [\n    {\n      \"name\": \"Population\",\n      \"type\": \"scatter\",\n      \"coordinateSystem\": \"gmap\",\n      \"itemStyle\": {\n        \"color\": \"#00c1de\"\n      },\n      \"data\": [\n        {\n          \"name\": \"Azerbaijan\",\n          \"value\": [\n            47.395,\n            40.43,\n            8352021\n          ]\n        },\n        {\n          \"name\": \"Albania\",\n          \"value\": [\n            20.068,\n            41.143,\n            3153731\n          ]\n        },\n        {\n          \"name\": \"Armenia\",\n          \"value\": [\n            44.563,\n            40.534,\n            3017661\n          ]\n        },\n        {\n          \"name\": \"Bosnia and Herzegovina\",\n          \"value\": [\n            17.786,\n            44.169,\n            3915238\n          ]\n        },\n        {\n          \"name\": \"Bulgaria\",\n          \"value\": [\n            25.231,\n            42.761,\n            7744591\n          ]\n        },\n        {\n          \"name\": \"Cyprus\",\n          \"value\": [\n            33.219,\n            35.043,\n            836321\n          ]\n        },\n        {\n          \"name\": \"Denmark\",\n          \"value\": [\n            9.264,\n            56.058,\n            5416945\n          ]\n        },\n        {\n          \"name\": \"Ireland\",\n          \"value\": [\n            -8.152,\n            53.177,\n            4143294\n          ]\n        },\n        {\n          \"name\": \"Estonia\",\n          \"value\": [\n            25.793,\n            58.674,\n            1344312\n          ]\n        },\n        {\n          \"name\": \"Austria\",\n          \"value\": [\n            14.912,\n            47.683,\n            8291979\n          ]\n        },\n        {\n          \"name\": \"Czech Republic\",\n          \"value\": [\n            15.338,\n            49.743,\n            10191762\n          ]\n        },\n        {\n          \"name\": \"Finland\",\n          \"value\": [\n            26.272,\n            64.504,\n            5246004\n          ]\n        },\n        {\n          \"name\": \"France\",\n          \"value\": [\n            2.55,\n            46.565,\n            60990544\n          ]\n        },\n        {\n          \"name\": \"Georgia\",\n          \"value\": [\n            43.518,\n            42.176,\n            4473409\n          ]\n        },\n        {\n          \"name\": \"Germany\",\n          \"value\": [\n            9.851,\n            51.11,\n            82652369\n          ]\n        },\n        {\n          \"name\": \"Greece\",\n          \"value\": [\n            21.766,\n            39.666,\n            11099737\n          ]\n        },\n        {\n          \"name\": \"Croatia\",\n          \"value\": [\n            16.693,\n            45.723,\n            455149\n          ]\n        },\n        {\n          \"name\": \"Hungary\",\n          \"value\": [\n            19.134,\n            47.07,\n            10086387\n          ]\n        },\n        {\n          \"name\": \"Iceland\",\n          \"value\": [\n            -18.48,\n            64.764,\n            295732\n          ]\n        },\n        {\n          \"name\": \"Israel\",\n          \"value\": [\n            34.851,\n            31.026,\n            6692037\n          ]\n        },\n        {\n          \"name\": \"Italy\",\n          \"value\": [\n            12.8,\n            42.7,\n            5864636\n          ]\n        },\n        {\n          \"name\": \"Latvia\",\n          \"value\": [\n            25.641,\n            56.858,\n            2301793\n          ]\n        },\n        {\n          \"name\": \"Belarus\",\n          \"value\": [\n            28.047,\n            53.54,\n            9795287\n          ]\n        },\n        {\n          \"name\": \"Lithuania\",\n          \"value\": [\n            23.897,\n            55.336,\n            3425077\n          ]\n        },\n        {\n          \"name\": \"Slovakia\",\n          \"value\": [\n            19.491,\n            48.707,\n            5386995\n          ]\n        },\n        {\n          \"name\": \"Liechtenstein\",\n          \"value\": [\n            9.555,\n            47.153,\n            34598\n          ]\n        },\n        {\n          \"name\": \"The former Yugoslav Republic of Macedonia\",\n          \"value\": [\n            21.698,\n            41.6,\n            2033655\n          ]\n        },\n        {\n          \"name\": \"Malta\",\n          \"value\": [\n            14.442,\n            35.89,\n            402617\n          ]\n        },\n        {\n          \"name\": \"Belgium\",\n          \"value\": [\n            4.664,\n            50.643,\n            10398049\n          ]\n        },\n        {\n          \"name\": \"Faroe Islands\",\n          \"value\": [\n            -6.864,\n            62.05,\n            48205\n          ]\n        },\n        {\n          \"name\": \"Andorra\",\n          \"value\": [\n            1.576,\n            42.549,\n            73483\n          ]\n        },\n        {\n          \"name\": \"Luxembourg\",\n          \"value\": [\n            6.088,\n            49.771,\n            456613\n          ]\n        },\n        {\n          \"name\": \"Monaco\",\n          \"value\": [\n            7.412,\n            43.75,\n            325\n          ]\n        },\n        {\n          \"name\": \"Montenegro\",\n          \"value\": [\n            19.254,\n            42.792,\n            607969\n          ]\n        },\n        {\n          \"name\": \"Netherlands\",\n          \"value\": [\n            5.389,\n            52.077,\n            1632769\n          ]\n        },\n        {\n          \"name\": \"Norway\",\n          \"value\": [\n            8.74,\n            61.152,\n            4638836\n          ]\n        },\n        {\n          \"name\": \"Poland\",\n          \"value\": [\n            19.401,\n            52.125,\n            38195558\n          ]\n        },\n        {\n          \"name\": \"Portugal\",\n          \"value\": [\n            -8.058,\n            40.309,\n            10528226\n          ]\n        },\n        {\n          \"name\": \"Romania\",\n          \"value\": [\n            24.969,\n            45.844,\n            21627557\n          ]\n        },\n        {\n          \"name\": \"Republic of Moldova\",\n          \"value\": [\n            28.599,\n            47.193,\n            3876661\n          ]\n        },\n        {\n          \"name\": \"Slovenia\",\n          \"value\": [\n            14.827,\n            46.124,\n            1999425\n          ]\n        },\n        {\n          \"name\": \"Spain\",\n          \"value\": [\n            -3.649,\n            40.227,\n            43397491\n          ]\n        },\n        {\n          \"name\": \"Sweden\",\n          \"value\": [\n            15.27,\n            62.011,\n            9038049\n          ]\n        },\n        {\n          \"name\": \"Switzerland\",\n          \"value\": [\n            7.908,\n            46.861,\n            7424389\n          ]\n        },\n        {\n          \"name\": \"Turkey\",\n          \"value\": [\n            35.179,\n            39.061,\n            72969723\n          ]\n        },\n        {\n          \"name\": \"United Kingdom\",\n          \"value\": [\n            -1.6,\n            53,\n            60244834\n          ]\n        },\n        {\n          \"name\": \"Ukraine\",\n          \"value\": [\n            31.388,\n            49.016,\n            46917544\n          ]\n        },\n        {\n          \"name\": \"San Marino\",\n          \"value\": [\n            12.46,\n            43.942,\n            30214\n          ]\n        },\n        {\n          \"name\": \"Serbia\",\n          \"value\": [\n            20.806,\n            44.032,\n            9863026\n          ]\n        },\n        {\n          \"name\": \"Holy See (Vatican City)\",\n          \"value\": [\n            12.451,\n            41.904,\n            783\n          ]\n        },\n        {\n          \"name\": \"Russia\",\n          \"value\": [\n            96.689,\n            61.988,\n            143953092\n          ]\n        }\n      ],\n      \"encode\": {\n        \"value\": 2,\n        \"lng\": 0,\n        \"lat\": 1\n      }\n    }\n  ]\n}",
+            "showCharts": true,
+            "preventStyleOverwriting": false,
+            "appliedThemeId": "",
+            "version": "latest"
+          },
+          "name": "chartsGeoMap1"
+        }
+      }
+    },
+    "queries": [
+      {
+        "compType": "restApi",
+        "comp": {
+          "bodyType": "none",
+          "body": "",
+          "httpMethod": "POST",
+          "path": "http://103.140.39.136:443/api/v1/auth/logout",
+          "headers": [{ "key": "", "value": "" }],
+          "params": [{ "key": "", "value": "" }],
+          "bodyFormData": [{ "key": "", "value": "", "type": "text" }]
+        },
+        "id": "14p9mxrexor7kzd1xbfoijt8",
+        "name": "logout",
+        "order": 1731734696917,
+        "datasourceId": "#QUICK_REST_API",
+        "triggerType": "manual",
+        "onEvent": [
+          {
+            "name": "success",
+            "handler": {
+              "compType": "runScript",
+              "comp": { "script": "localStorage.clear()" },
+              "condition": "",
+              "slowdown": "debounce",
+              "delay": ""
+            }
+          },
+          {
+            "name": "success",
+            "handler": {
+              "compType": "openAppPage",
+              "comp": {
+                "applicationId": { "applicationId": "6737c474f91a261c93cfd041" },
+                "query": [{}],
+                "hash": [{}]
+              },
+              "condition": "",
+              "slowdown": "debounce",
+              "delay": ""
+            }
+          }
+        ],
+        "notification": {
+          "showSuccess": true,
+          "success": { "text": "Đăng xuất thành công!" },
+          "showFail": true,
+          "fail": [{ "text": "Đăng xuất thất bại!" }]
+        },
+        "timeout": "",
+        "confirmationModal": {},
+        "periodic": false,
+        "periodicTime": "",
+        "cancelPrevious": false
+      },
+      {
+        "compType": "js",
+        "comp": {
+          "script": "// Lấy chuỗi Base64 từ file1.value\nconst base64StringArray = file1.value;\nif (!Array.isArray(base64StringArray) || base64StringArray.length === 0) {\n  console.error(\"Dữ liệu Base64 không hợp lệ:\", base64StringArray);\n  return;\n}\n\n// Lấy chuỗi Base64 từ mảng\nconst base64String = base64StringArray[0];\n\n// Loại bỏ khoảng trắng trong Base64 (nếu có)\nconst sanitizedBase64String = base64String.replace(/\\s/g, \"\");\n\n// Thông tin tệp\nconst mimeType = \"application/pdf\"; // MIME type\nconst fileName = \"uploaded-file.pdf\"; // Tên file\n\ntry {\n  // Chuyển Base64 thành dữ liệu nhị phân (binary)\n  const binaryData = atob(sanitizedBase64String); // Giải mã Base64\n  const byteNumbers = new Uint8Array(binaryData.length); // Tạo Uint8Array\n  for (let i = 0; i < binaryData.length; i++) {\n    byteNumbers[i] = binaryData.charCodeAt(i); // Chuyển ký tự thành byte\n  }\n\n  // Tạo Blob từ binary data\n  const blob = new Blob([byteNumbers], { type: mimeType });\n\n  // Tạo FormData để gửi qua API\n  const formData = new FormData();\n  formData.append(\"file\", blob, fileName); // Thêm tệp vào FormData\n  formData.append(\"name\", \"Hoso\"); // Thêm thông tin bổ sung\n  formData.append(\"profileId\", localStorage.values.profileId); // Profile ID từ localStorage\n\n  fetch(\"http://103.140.39.136:443/api/v1/pdf\", {\n    method: \"POST\",\n    body: formData,\n    headers: {\n      Authorization: `Bearer ${localStorage.values['access-token']}`,\n    },\n  })\n    .then((response) => {\n      if (!response.ok) {\n        throw new Error(`HTTP error! status: ${response.status}`);\n      }\n      return response.json();\n    })\n    .then((result) => {\n      console.log(\"Upload thành công:\", result);\n    })\n    .catch((error) => {\n      console.error(\"Lỗi khi upload:\", error);\n    });\n} catch (error) {\n  console.error(\"Lỗi khi xử lý Base64:\", error);\n}\n"
+        },
+        "id": "z63iirmv8wec5t5iy6cek0iq",
+        "name": "uploadFile",
+        "order": 1731771907979,
+        "datasourceId": "",
+        "triggerType": "manual",
+        "onEvent": [
+          {
+            "name": "success",
+            "handler": {
+              "compType": "openAppPage",
+              "comp": {
+                "applicationId": { "applicationId": "6738718ef91a261c93cfeb1e" },
+                "query": [{}],
+                "hash": [{}]
+              },
+              "condition": "",
+              "slowdown": "debounce",
+              "delay": ""
+            }
+          }
+        ],
+        "notification": {
+          "showSuccess": true,
+          "success": { "text": "Nộp file hồ sơ thành công!" },
+          "showFail": true,
+          "fail": [{}]
+        },
+        "timeout": "",
+        "confirmationModal": {},
+        "periodic": false,
+        "periodicTime": "",
+        "cancelPrevious": false
+      }
+    ],
+    "refTree": { "value": "", "items": [{ "value": "logout" }, { "value": "uploadFile" }] },
+    "hooks": [
+      { "compType": "urlParams", "comp": {}, "name": "url" },
+      { "compType": "dayJsLib", "comp": {}, "name": "dayjs" },
+      { "compType": "lodashJsLib", "comp": {}, "name": "_" },
+      { "compType": "utils", "comp": {}, "name": "utils" },
+      { "compType": "message", "comp": {}, "name": "message" },
+      { "compType": "toast", "comp": {}, "name": "toast" },
+      { "compType": "localStorage", "comp": {}, "name": "localStorage" },
+      { "compType": "currentUser", "comp": {}, "name": "currentUser" },
+      { "compType": "screenInfo", "comp": {}, "name": "screenInfo" },
+      { "compType": "theme", "comp": {}, "name": "theme" }
+    ],
+    "settings": {
+      "title": "",
+      "description": "",
+      "category": "Business",
+      "showHeaderInPublic": true,
+      "themeId": "default",
+      "preventAppStylesOverwriting": true,
+      "disableCollision": false,
+      "lowcoderCompVersion": "latest",
+      "maxWidth": { "dropdown": "1920", "input": 0 },
+      "gridRowCount": "Infinity",
+      "gridPaddingX": "20",
+      "gridPaddingY": "20"
+    },
+    "preload": { "script": "", "css": "", "globalCSS": "" }
+  }
+}
