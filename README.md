@@ -19,6 +19,8 @@
 - Ứng dụng sử dụng công nghệ Low-Code Development Platform (LCDP) để dễ dàng cấu hình và triển khai.
 - Giảm bớt thủ tục hành chính, giúp tiết kiệm thời gian và chi phí cho các cơ quan chức năng.
 
+---
+
 ## 🔎 Danh Mục
 
 1. [Giới Thiệu](#Giới-Thiệu)
@@ -33,11 +35,16 @@
 8. [📝 License](#📝-license)
 
 
+---
+=======
+
 ## Giới Thiệu
 
 - [Ứng dụng hành chính một cửa](https://pbgdpl.haiphong.gov.vn/Hoi-dap-phap-luat/Bo-phan-Mot-cua-la-gi-Nhiem-vu-cua-Bo-phan-Mot-cua-98905.html) giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
 - [Công nghệ LCDP](https://vfossa.vn/tin-tuc/gioi-thieu-chu-de-cuoc-thi-phan-mem-nguon-mo-olp-2024-709.html) cho phép các công cụ cấu hình dễ dàng và triển khai nhanh chóng mà không cần phải lập trình nhiều.
 - Ứng dụng này giúp tối ưu hóa quy trình làm việc và tăng tính chính xác trong việc xử lý văn bản.
+
+---
 
 ## Chức Năng Chính
 # Cần xem lại
@@ -47,6 +54,9 @@ Dự án tập trung vào các chức năng chính sau:
 - 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
 - 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
 <!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
+
+
+---
 
 ## 👩‍💻 Tổng Quan Hệ Thống
 
@@ -65,6 +75,8 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 
 <img loading="lazy" src="docs/images/sysyem_architecture.svg" alt="System Architecture" width="100%" height=600>
 
+---
+
 ## CI/CD
 
 Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
@@ -72,6 +84,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 
+---
 
 ## Cấu trúc thư mục
 
@@ -79,6 +92,36 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 <!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
+
+---
+## API List
+### Auth API
+* Log in: [POST]: ```/api/v1/auth/login```
+* Log out: [POST]: ```/api/v1/auth/logout```
+### User API
+* Get all user [GET]: ```/api/v1/user```
+* Get user by id [GET]: ```/api/v1/user/{userId}```
+* Get current user login [GET]: ```/api/v1/user/current```
+* Create new user [POST]: ```/api/v1/user```
+* Update user [PATCH]: ```/api/v1/user```
+* Change password [PATCH]: ```/api/v1/user/changePassword```
+* Delete user [DELETE]: ```/api/v1/user```
+### Profile API
+* Get all profile [GET]: ```/api/v1/profile```
+* Get profile by userId [GET]: ```/api/v1/profile/user```
+* Create new profile [POST]: ```/api/v1/profile```
+* Update profile [PATCH]: ```/api/v1/profile```
+* Accept profile [PATCH]: ```/api/v1/profile/accept```
+* Reject profile [PATCH]: ```/api/v1/profile/reject```
+* Delete profile [DELETE]: ```/api/v1/profile```
+### PDF API
+* Get PDF by profileId [GET]: ```/api/v1/pdf/profile```
+* Upload new PDF in a profile [POST]: ```/api/v1/pdf```
+* Delete PDF [DELETE]: ```/api/v1/pdf```
+---
+## Thiết kế Database
+![database.png](docs/images/database.png)
+---
 
 ## Hướng Dẫn Cài Đặt
 
