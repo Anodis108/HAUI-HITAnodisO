@@ -48,6 +48,7 @@ project
 ![img.png](../docs/images/architecture.png)
 
 
+
 ### Auth Controller
 * Auth Controller: Service xử lý việc đăng nhập, đăng ký, đăng xuất, xác thực người dùng.
   * Sử dụng JWT để phân quyền. Dùng access token và refresh token.
@@ -131,7 +132,6 @@ PORT
 <tr>
 <td>API Gateway</td>
 <td>
-
 8080:8080
 
 </td>

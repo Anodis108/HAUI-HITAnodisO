@@ -37,6 +37,10 @@
 
 ---
 
+
+---
+=======
+
 ## Giới Thiệu
 
 - [Ứng dụng hành chính một cửa](https://pbgdpl.haiphong.gov.vn/Hoi-dap-phap-luat/Bo-phan-Mot-cua-la-gi-Nhiem-vu-cua-Bo-phan-Mot-cua-98905.html) giúp các cơ quan hành chính đóng dấu nhanh chóng lên các đơn từ, chứng từ khi cần thiết, mà không cần đến thao tác thủ công.
