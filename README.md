@@ -79,7 +79,7 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 ## CI/CD
 
 Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
-![CI/CD](./docs/images/ci_cd.svg)
+![CI/CD](docs/images/ci_cd.svg)
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 

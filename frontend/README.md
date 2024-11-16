@@ -2,6 +2,26 @@
 
 ##### (Toàn bộ file cấu hình frontend ở phía nguời dùng sẽ nằm ở thư mục này)
 
+### Cấu trúc thư mục
+```bash
+├── assets
+│   ├── home-lowcoder.png
+│   ├── import-sussess.png
+│   ├── import-yourrapp.png
+│   ├── preview.png
+│   └── update-link.png
+├── README.md
+└── src
+    ├── Haui-HitAnodisO_Change-Infor.json
+    ├── Haui-HitAnodisO_Change-Password.json
+    ├── Haui-HitAnodisO_Create-Profile.json
+    ├── Haui-HitAnodisO_Home.json
+    ├── Haui-HitAnodisO_List_PDF_Of_Profile.json
+    ├── Haui-HitAnodisO_List-Profiles.json
+    ├── Haui-HitAnodisO_Login.json
+    ├── Haui-HitAnodisO_Signup.json
+    └── Haui-HitAnodisO_UploadFile.json
+```
 # **Yêu Cầu Hệ Thống**
 
 ### Những yêu cầu về môi trường chạy dự án:
