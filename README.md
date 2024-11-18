@@ -218,14 +218,12 @@ Nếu bạn muốn đóng góp cho dự án, hãy đọc [CONTRIBUTING.md](.gith
 
 Mọi đóng góp của các bạn đều được trân trọng, đừng ngần ngại gửi pull request cho dự án.
 
-## Liên hệ
+## Liên hệ 
 
 -   Phạm Đăng Đông: dong10082003@gmail.com
 -   Nguyễn Thị Trang: nguyenthitrang.ttd@gmail.com
 -   Đỗ Trung Hòa: trunghoa2k4@gmail.com
--   Phạm Văn Hà:
--   Nguyễn Xuân Hoàng:
--   Nguyễn Trung Phú:
+
 
 ## 📝 License
 
