@@ -7,10 +7,13 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/Anodis108/HAUI-HITAnodisO 'Github contributors')](https://github.com/Anodis108/HAUI-HITAnodisO/graphs/contributors)
 ![](./docs/images/banner.png)
 
-# Ứng Dụng Hành Chính Một Cửa Hỗ Trợ Đóng Dấu Đơn Từ [![Demo](https://img.shields.io/badge/Demo-2ea44f?style=for-the-badge)](http://demo-link.com) [![Documentation](https://img.shields.io/badge/Documentation-blue?style=for-the-badge)](https://project-docs.com)
+# Ứng Dụng Hành Chính Một Cửa Hỗ Trợ Đóng Dấu Đơn Từ 
 
 <a href="https://github.com/Anodis108/HAUI-HITAnodisO/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">Bug Report ⚠️</a>
 <a href="https://github.com/Anodis108/HAUI-HITAnodisO/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=">Request Feature 👩‍💻</a>
+ 
+![Trang chủ](docs/images/trang_chu.jpg)
+![Trang chủ Upload](docs/images/trang_cho_uploadupload.jpeg)
 
 Ứng dụng hỗ trợ đóng dấu và xử lý các đơn từ trong hệ thống hành chính, áp dụng công nghệ LCDP để giảm thiểu thời gian xử lý thủ công và nâng cao hiệu quả công việc. 
 
@@ -27,12 +30,15 @@
 2. [Chức Năng Chính](#chức-năng-chính)
 3. [Tổng Quan Hệ Thống](#👩‍💻-tổng-quan-hệ-thống)
 4. [Cấu Trúc Thư Mục](#cấu-trúc-thư-mục)
-5. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
+5. [Danh sách API](#api-list)
+6. [Thiết kế Database](#thiết-kế-database)
+7. [Hướng Dẫn Cài Đặt](#hướng-dẫn-cài-đặt)
     - [📋 Yêu Cầu - Prerequisites](#yêu-cầu-📋)
     - [🔨 Cài Đặt](#🔨-cài-đặt)
-6. [CI/CD](#ci/cd)
-7. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
-8. [📝 License](#📝-license)
+8. [CI/CD](#ci/cd)
+9. [🙌 Đóng Góp](#🙌-đóng-góp-cho-dự-án)
+10. [📝 License](#📝-license)
+
 
 ---
 
@@ -47,12 +53,12 @@
 
 
 ## Chức Năng Chính
-# Cần xem lại
 Dự án tập trung vào các chức năng chính sau:
 
-- 🖼️ **Nhận các đơn từ** từ hình ảnh hoặc tệp PDF.
-- 🖋️ **Đóng dấu tự động**: Đặt dấu trên các đơn từ theo yêu cầu.
-- 🧾 **Quản lý tài liệu**: Quản lý các đơn từ đã được đóng dấu và lưu trữ.
+- 🖼️ [**Nhận các đơn từ**](docs/images/chon_file.jpeg) từ hình ảnh hoặc tệp PDF.
+
+- 🖋️ [**Đóng dấu tự động**](AI/README.md): Đặt dấu trên các đơn từ theo yêu cầu.
+- 🧾 [**Quản lý tài liệu**](docs/images/xem_file_pdf.jpeg): Quản lý các đơn từ đã được đóng dấu và lưu trữ.
 <!-- - 🔄 **Tích hợp với các hệ thống khác**: Hỗ trợ liên kết với các hệ thống lưu trữ tài liệu điện tử. -->
 
 
@@ -79,7 +85,7 @@ Hệ thống sử dụng kiến trúc [Layered Architecture](https://topdev.vn/b
 ## CI/CD
 
 Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis108/HAUI-HITAnodisO/tree/develop/.github/workflows) để tự động hóa quá trình build và deploy. Quy trình như hình vẽ sau:
-![CI/CD](./docs/images/ci_cd.svg)
+![CI/CD](docs/images/ci_cd.svg)
 
 - [commitlint.yml](https://github.com/Anodis108/HAUI-HITAnodisO/blob/develop/.github/workflows/commitlint.yml): Lint các commit message của các nhánh
 
@@ -89,7 +95,7 @@ Project CI/CD sử dụng Github và [Github Actions](https://github.com/Anodis1
 ## Cấu trúc thư mục
 
 - [Backend](backend/README.md): Chứa các service backend, API, và các chức năng xử lý dấu.
-<!-- - [Frontend]: Giao diện người dùng, dễ sử dụng và có thể cấu hình linh hoạt. -->
+- [Frontend](frontend/README.md): Giao diện người dùng, dễ sử dụng và có thể thao tác trên đó
 - [Docs](docs): Tài liệu về hệ thống, cuoocj thi, sử dụng.
 - [AI](AI/README.md): Tài liệu về module xử lý ảnh
 
@@ -139,22 +145,15 @@ Trước khi cài đặt, bạn cần cài đặt các công cụ sau:
 Trước hết, hãy clone dự án về máy tính của bạn:
 
 ```bash
-git clone https://github.com/CTU-LinguTechies/VN-Law-Advisor.git vnlawadvisor
+git clone https://github.com/Anodis108/HAUI-HITAnodisO
 ```
-cd vào thư mục vnlawadvisor:
+cd vào thư mục HAUI-HITAnodisO:
 
 ```bash
-cd vnlawadvisor
+cd HAUI-HITAnodisO
 ```
 
-## Đoạn này cần sửa
 ## Chạy backend hệ thống
-
--   Đầu tiên, cd vào thư mục backend:
-
-```bash
-cd backend
-```
 
 -   Start các services với 1 lệnh docker-compose:
 
@@ -162,7 +161,7 @@ cd backend
 docker-compose up -d
 ```
 
-### Đoạn này cần sửa
+
 ### PORT BINDING
 
 -   Sau khi chạy xong, các service sẽ được chạy trên các port như sau:
@@ -180,74 +179,32 @@ PORT
 <td>API Gateway</td>
 <td>
 
-8000:12345
-
-8001:12345
-
-8002:12345
-
-8003:12345
-
-8004:12345
+8080:8080
 
 </td>
 
 </tr>
 <tr>
-<td>Auth Service</td>
-<td>5000:5000</td>
+<td>AI Service</td>
+<td>8000:8000</td>
 </tr>
 <tr>
-<td>Law Service</td>
-<td>8080:8080</td>
-</tr>
-<tr>
-<td>RAG Service</td>
-<td>5001:5001</td>
-</tr>
-<tr>
-<td>Recommendation Service</td>
-<td>5002:5002</td>
-</tr>
+
+
+
 </tbody>
 </table>
 
-### Đoạn này cần sửa
-### Chạy web-app
+### Chạy wapp
 
 -   Đầu tiên, cd vào thư mục web:
 
 ```bash
-cd web
+cd frontend
 ```
 
--   Cài đặt các thư viện cần thiết:
+-   Thực hiện các bước theo file [**Hướng dẫn**](frontend/README.md) này
 
-```bash
-npm install
-```
-
--   Chạy web-app development mode:
-
-```bash
-npm run dev
-```
-
-Lúc này web-app sẽ chạy ở địa chỉ [http://localhost:3000](http://localhost:3000). Đến đây, bạn đã cài đặt xong. Còn nếu như bạn muốn chạy project ở môi trường production, hãy ngừng development server và chạy các lệnh sau:
-
--   Build frontend web-app
-
-```bash
-npm run build
-```
-
--   Chạy web-app production mode:
-
-```bash
-npm run start
-```
-
-Lúc này web-app sẽ chạy ở địa chỉ [http://localhost:3000](http://localhost:3000).
 
 
 ## 🙌 Đóng góp cho dự án
@@ -261,14 +218,12 @@ Nếu bạn muốn đóng góp cho dự án, hãy đọc [CONTRIBUTING.md](.gith
 
 Mọi đóng góp của các bạn đều được trân trọng, đừng ngần ngại gửi pull request cho dự án.
 
-## Liên hệ
+## Liên hệ 
 
 -   Phạm Đăng Đông: dong10082003@gmail.com
 -   Nguyễn Thị Trang: nguyenthitrang.ttd@gmail.com
 -   Đỗ Trung Hòa: trunghoa2k4@gmail.com
--   Phạm Văn Hà:
--   Nguyễn Xuân Hoàng:
--   Nguyễn Trung Phú:
+
 
 ## 📝 License
 

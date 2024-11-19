@@ -2,6 +2,7 @@
 FROM maven:3.8.3-openjdk-17 AS build
 
 WORKDIR /app
+COPY pom.xml .
 COPY . .
 RUN mvn install -DskipTests=true
 
@@ -12,4 +13,4 @@ WORKDIR /run
 COPY --from=build /app/target/project-base-1.0.jar /run/project-base-1.0.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/run/profile-processing-1.0.jar"]
+ENTRYPOINT ["java", "-jar", "/run/project-base-1.0.jar"]

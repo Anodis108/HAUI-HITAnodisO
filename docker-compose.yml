@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ai:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    container_name: ai
+    ports:
+      - "8000:8000"  # Cổng mà FastAPI sẽ chạy
+    networks:
+      - app-network
+    environment:
+      - PYTHONUNBUFFERED=1  # Đảm bảo output của Python không bị đệm
+    volumes:
+      - ./AI:/app  # Mount volume để phát triển, nếu cần
+    command: ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+    
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "8080:8080"  # Cổng mà backend sẽ chạy trên máy chủ
+    networks:
+      - app-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod  # Ví dụ biến môi trường cho Spring Boot
+    depends_on:
+      - ai  # Đảm bảo rằng AI đã sẵn sàng trước khi backend chạy
+
+networks:
+  app-network:
+    driver: bridge
